@@ -1,34 +1,41 @@
 <template>
-    <div>
-        <h2>Este es el visor de la tabla</h2>
-        <table>
-            <thead>
-                <th>Nombre</th>
-                <th>Edad</th>
-            </thead>
-            <tbody>
-                <tr v-for="(persona, index) in store.personas">
-                    <td>{{persona.nombre}}</td>
-                    <td>{{persona.edad}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <div class="card ms-2 pt-3">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(persona, index) in store.personas">
+          <td>{{ index }}</td>
+          <td>{{ persona.nombre }}</td>
+          <td>{{ persona.edad }}</td>
+          <td>
+            <button class="btn btn-danger" @click="borrar(index)"><span class="fa fa-trash"></span></button>
+            <button class="btn btn-warning ms-1"><span class="fa fa-edit"></span></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
-import {useDataModelStore} from '../stores/dataModel';
+import { usePersonasStore } from "../stores/personas";
 export default {
-    setup () {
-        const store=useDataModelStore()
+  setup() {
+    const store = usePersonasStore();
+    
+    const borrar=(i)=> store.borraPersona(i);
 
-        return {
-            store,
-        }
-    }
-}
+    return {
+      store,
+      borrar,
+    };
+  },
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>
