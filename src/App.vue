@@ -1,28 +1,28 @@
 <script setup>
-import TableView from "./components/TableView.vue";
+import Cabecera from "./components/Cabecera.vue";
 import TableForm from "./components/TableForm.vue";
-
+import TableView from "./components/TableView.vue";
+import SiteForm from "./components/SiteForm.vue";
 </script>
 
 <template>
-  <header class="bg-secondary text-light p-3">
-    <div class="card-dark px-5">
-      <h1 class="card-title text-center">Formulario manejo JSON</h1>
-      <p>El objetivo es manejar un array de objetos mediante un formulario</p>
-      <p>Con el formulario se puede:</p>
-      <ul>
-        <li>Añadir, borrar y modificar elementos del array</li>
-        <li>Los datos se guardan automáticamente en LocalStorage</li>
-        <li>El array se puede guardar en un archivo local</li>
-        <li>Los datos se pueden recuperar del archivo local</li>
-      </ul>
-    </div>
-  </header>
+  <Cabecera />
 
   <main class="mx-3">
-    <TableForm/>
-    <!-- <TableView class="col" /> -->
-
+    <!---------------ESTATUS DE LA MUESTRA-------------->
+    <div class="row">
+      <div class="col bg-dark card ms-3 mt-3">
+        <SiteForm />
+      </div>
+    <!---------------FORMULARIO DE PAGINAS-------------->
+      <div class="col card bg-primary ms-3 mt-3">
+        <TableForm />
+      </div>
+    </div>
+    <!-----------------------TABLA DE RESULTADOS--------->
+    <div class="row">
+      <TableView />
+    </div>
   </main>
 </template>
 

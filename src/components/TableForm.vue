@@ -1,95 +1,74 @@
 <template>
-<div class="row">
-  <div class="col card pt-3">
-    <form class="bg-primary text-light p-2">
-      <label class="form-label" for="nombre">Nombre:</label>
+  <div class="text-light">
+    <h2>Datos de la página</h2>
+    <form @submit.prevent class="card text-light bg-primary mb-2">
+      <label class="form-label" for="inurl">URL</label>
       <input
         class="form-control"
+        id="inurl"
         type="text"
-        id="nombre"
-        v-model="nombre"
+        placeholder="URL"
+        v-model="store.inUrl"
+        required
       />
-      <label class="form-label" for="edad">Edad:</label>
+      <label class="form-label" for="intype">Tipo de página</label>
+      <select class="form-select" id="intype" v-model="store.inType" required>
+        <option disabled value="">Tipo de página</option>
+        <option v-for="type in store.pageTypes" v-bind:value="type.value">
+          {{ type.text }}
+        </option>
+      </select>
+      <label class="form-label" for="inshortname">Nombre corto</label>
       <input
         class="form-control"
+        id="inshortname"
         type="text"
-        id="edad"
-        v-model="edad"
+        placeholder="Nombre corto"
+        v-model="store.inShortName"
+        required
       />
-      <div class="mt-2">
-        <button type="submit" class="btn btn-outline-light bg-success" @click.prevent="nuevo">
-          Nuevo
-        </button>
-        <button
-          class="btn btn-outline-light text-dark bg-warning disabled mx-1">
-          Editar
-        </button>
-        <button class="btn btn-outline-light bg-danger disabled">
-          Borrar todo
-        </button>
-      </div>
+      <label class="form-label" for="inbreadcrumb">Migas</label>
+      <input
+        class="form-control"
+        id="inbreadcrumb"
+        type="text"
+        placeholder="Migas"
+        v-model="store.inBreadcrumb"
+        required
+      />
+      <button
+        v-if="!editMode"
+        type="submit"
+        class="btn btn-outline-light mt-2"
+        @click="store.addItem"
+      >
+        Añadir
+      </button>
+      <button
+        v-if="editMode"
+        type="submit"
+        class="btn btn-primary btn- mt-2"
+        @click="saveModified"
+      >
+        Modificar
+      </button>
     </form>
   </div>
-    <div class="card col ms-2 pt-3">
-    <table class="table table-dark table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Acción</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(persona, index) in store.personas">
-          <td>{{ index }}</td>
-          <td>{{ persona.nombre }}</td>
-          <td>{{ persona.edad }}</td>
-          <td>
-            <button class="btn btn-danger" @click="borrar(index)"><span class="fa fa-trash"></span></button>
-            <button class="btn btn-warning ms-1"><span class="fa fa-edit"></span></button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-</div>
-
 </template>
 
 <script>
 import { ref } from '@vue/reactivity';
-import { usePersonasStore } from "../stores/personas";
+import { useSiteStore } from "../stores/site";
 export default {
   setup() {
-    const store = usePersonasStore();
-    //const personas = ref([])
-    let nombre=ref('')
-    let edad=ref('')
-
-
-
-    function nuevo() {
-      //store.nuevaPersona(val)
-      console.log(nombre.value);
-      store.personas.push({nombre:nombre.value,edad:edad.value})
-    }
-
-    function borrar(i){
-      console.log('index',i);
-    }
+    const store = useSiteStore();
+    let editMode = ref(false);
 
     return {
       store,
-      //personas,
-      nuevo,
-      nombre,
-      edad,
-      borrar,
-    }
+      editMode,
+    };
   },
-  computed:{
-  }
+  computed: {},
 };
 </script>
