@@ -32,7 +32,7 @@ export const useSiteStore = defineStore({
     inBreadcrumb: "",
     //Array de páginas
     siteWebPages: [
-      {
+     /*  {
         breadcrumb: "Inicio",
         shortName: "inicio",
         webPageType: "HOME",
@@ -43,14 +43,18 @@ export const useSiteStore = defineStore({
         shortName: "accesibilidad",
         webPageType: "ACCESSIBILITY_DECLARATION",
         webPageUrl: "https://www.elche.es/accesibilidad",
-      },
+      }, */
     ],
+    editMode:false, //flag del modo edición
   }),
 
   /**********
    * GETTERS
    */
   getters: {
+    /******************************************************
+     * COMPROBACIONES PARA EL ESTATUS DE LA MUESTRA
+     */
     //Número de urls de la muestra
     numUrl: (state) => {
       return state.siteWebPages.reduce((acc, e) => {
@@ -92,12 +96,12 @@ export const useSiteStore = defineStore({
     },
   },
 
-  /*************
+  /********************************************************
    * ACCIONES
    */
-
   actions: {
-    /*     urlList() {
+    //monta el objeto urlList que es el JSON que almacena toda la información de la muestra
+    urlList() {
       return [
         {
           siteId: this.siteId,
@@ -107,14 +111,41 @@ export const useSiteStore = defineStore({
         },
       ];
     },
- */
+    //Recuperando datos de localhost
+    //TODO ampliar para que recupere de otros orígenes
+    restoreSavedData() {
+      try {
+        const savedLocal = localStorage.getItem("saved-site");
+        const parsed = JSON.parse(savedLocal);
+        this.siteName = parsed[0].siteName;
+        this.siteDomain = parsed[0].siteDomain;
+        this.siteWebPages = [...parsed[0].siteWebPages];
+      } catch {
+        console.log("Se ha producido un error al recuprar datos");
+      }
+    },
+
     /**
      * GUARDAR TRABAJO EN LOCALSTORAGE
      */
     saveSite() {
-      //console.log("urlList", urlList);
-      //const parsed = JSON.stringify(urlList);
-      //localStorage.setItem("saved-site", parsed);
+      const parsed = JSON.stringify(this.urlList());
+      localStorage.setItem("saved-site", parsed);
+    },
+    /*******
+     * Organiza urlList
+     */
+    orden() {
+      const ordered = [];
+      this.pageTypes.forEach((pageType) => {
+        this.siteWebPages.map((page) => {
+          if (page.webPageType == pageType.value) {
+            ordered.push(page);
+          }
+        });
+      });
+      this.siteWebPages = ordered;
+      this.saveSite();
     },
 
     /***
@@ -131,6 +162,43 @@ export const useSiteStore = defineStore({
         alert("¡Los datos se han borrado!");
       }
     },
+    /***
+     * BORRA UNA PÁGINA DE LA MUESTRA
+     */
+    deleteItem(index) {
+      this.siteWebPages.splice(index, 1);
+      this.saveSite();
+    },
+    /********
+     * EDITA UNA PÁGINA DE LA MUESTTRA
+     */
+    //Pone en modo edición
+    editItem(index) {
+      this.editMode = true;
+      this.indice = index;
+      this.inUrl = this.siteWebPages[index].webPageUrl;
+      this.inType = this.siteWebPages[index].webPageType;
+      this.inShortName = this.siteWebPages[index].shortName;
+      this.inBreadcrumb = this.siteWebPages[index].breadcrumb;
+    },
+    //guarda la página editada
+    saveModified() {
+      const i = this.indice;
+      this.siteWebPages[i] = {
+        webPageUrl: this.inUrl,
+        webPageType: this.inType,
+        shortName: this.inShortName,
+        breadcrumb: this.inBreadcrumb,
+      };
+      this.indice = null;
+      this.inUrl = "";
+      this.inType = "";
+      this.inShortName = "";
+      this.inBreadcrumb = "";
+      this.editMode = false;
+      this.saveSite();
+    },
+
     /**
      *  GUARDADO DEL FICHERO .BAT
      */

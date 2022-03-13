@@ -4,11 +4,16 @@
   </header>
 </template>
 <script>
+import { onMounted } from '@vue/runtime-core';
 import { useSiteStore } from "../stores/site";
 export default {
   setup() {
+    //Carga de datos guardados en localstorage al montar la cabecera
+    onMounted(()=>{
+      store.restoreSavedData();
+    });
     const store = useSiteStore();
-    return {
+        return {
       store,
     };
   },

@@ -6,7 +6,7 @@
         <tr>
           <th>#</th>
           <th>url</th>
-          <th>Tipo</th>
+          <th><button class="btn btn-primary btn-sm" @click="store.orden()" title="Ordena la muestra por tipo de página">Tipo</button> </th>
           <th>Shortname</th>
           <th>Migas</th>
           <th>acción</th>
@@ -20,11 +20,11 @@
           <td>{{page.shortName}}</td>
           <td>{{page.breadcrumb}}</td>
           <td>
-            <button class="btn btn-danger" @click="borrar(index)">
-              <span class="fa fa-trash"></span>
+            <button class="btn btn-danger" @click="store.deleteItem(index)">
+              <span class="fa fa-trash" aria-label="Borra línea"></span>
             </button>
-            <button class="btn btn-warning ms-1">
-              <span class="fa fa-edit"></span>
+            <button class="btn btn-warning ms-1" @click="store.editItem(index)">
+              <span class="fa fa-edit" aria-label="Edita línea"></span>
             </button>
           </td>
         </tr>

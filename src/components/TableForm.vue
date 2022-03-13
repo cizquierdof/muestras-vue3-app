@@ -37,18 +37,18 @@
         required
       />
       <button
-        v-if="!editMode"
+        v-if="!store.editMode"
         type="submit"
         class="btn btn-outline-light mt-2"
-        @click="store.addItem"
+        @click="store.addItem()"
       >
         Añadir
       </button>
       <button
-        v-if="editMode"
+        v-if="store.editMode"
         type="submit"
         class="btn btn-primary btn- mt-2"
-        @click="saveModified"
+        @click="store.saveModified()"
       >
         Modificar
       </button>
@@ -62,11 +62,9 @@ import { useSiteStore } from "../stores/site";
 export default {
   setup() {
     const store = useSiteStore();
-    let editMode = ref(false);
 
     return {
       store,
-      editMode,
     };
   },
   computed: {},
