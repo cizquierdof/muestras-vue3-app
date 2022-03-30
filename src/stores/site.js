@@ -23,8 +23,8 @@ export const useSiteStore = defineStore({
       { text: "Documento descargable", value: "DOWNLOADABLE_DOC" },
     ],
     //Parámetros del sitio
-    siteName: "Sitio de prueba",
-    siteDomain: "dominio",
+    siteName: "",
+    siteDomain: "",
     //Inputs de las páginas
     inUrl: "",
     inType: "",
@@ -234,7 +234,8 @@ export const useSiteStore = defineStore({
      * SALVA EL JSON
      */
     saveJson() {
-      const parsed = JSON.stringify(this.urlList);
+      //console.log(this.urlList());
+      const parsed = JSON.stringify(this.urlList());
       const jsonBlob = new Blob([parsed]);
       const blobUrl = URL.createObjectURL(jsonBlob);
       const link = document.createElement("a");
