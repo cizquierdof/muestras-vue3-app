@@ -1,27 +1,10 @@
 import { defineStore } from "pinia";
+import {PAGE_TYPES} from '../config/config';
 
 export const useSiteStore = defineStore({
   id: "site",
   state: () => ({
-    pageTypes: [
-      { text: "Página de inicio", value: "HOME" },
-      { text: "Inicio de sesión", value: "SESSION_START" },
-      { text: "Mapa web", value: "WEB_MAP" },
-      { text: "Contacto", value: "CONTACT" },
-      { text: "Ayuda", value: "HELP" },
-      { text: "Legal", value: "LEGAL" },
-      { text: "Servicio/Proceso", value: "SERVICE" },
-      { text: "Búsqueda", value: "SEARCH" },
-      {
-        text: "Declaración de accesibilidad",
-        value: "ACCESSIBILITY_DECLARATION",
-      },
-      { text: "Mecanismo de comunicación", value: "COMMUNICATION_MECHANISM" },
-      { text: "Página tipo", value: "TYPICAL_PAGE" },
-      { text: "Otras páginas", value: "OTHER" },
-      { text: "Aleatoria", value: "ALEATORY" },
-      { text: "Documento descargable", value: "DOWNLOADABLE_DOC" },
-    ],
+    pageTypes: PAGE_TYPES,
     //Parámetros del sitio
     siteName: "",
     siteDomain: "",
@@ -30,27 +13,14 @@ export const useSiteStore = defineStore({
     inType: "",
     inShortName: "",
     inBreadcrumb: "",
-    //Array de páginas
-    siteWebPages: [
-     /*  {
-        breadcrumb: "Inicio",
-        shortName: "inicio",
-        webPageType: "HOME",
-        webPageUrl: "https://www.elche.es/",
-      },
-      {
-        breadcrumb: "Inicio/acesibilidad",
-        shortName: "accesibilidad",
-        webPageType: "ACCESSIBILITY_DECLARATION",
-        webPageUrl: "https://www.elche.es/accesibilidad",
-      }, */
-    ],
-    editMode:false, //flag del modo edición
+    siteWebPages: [], //Array de páginas
+    editMode:false, //flag del modo edición 
   }),
 
-  /**********
+  /*****************************************************
    * GETTERS
    */
+
   getters: {
     /******************************************************
      * COMPROBACIONES PARA EL ESTATUS DE LA MUESTRA
@@ -100,7 +70,7 @@ export const useSiteStore = defineStore({
    * ACCIONES
    */
   actions: {
-    //monta el objeto urlList que es el JSON que almacena toda la información de la muestra
+    //monta el JSON que almacena toda la información de la muestra
     urlList() {
       return [
         {
@@ -111,6 +81,7 @@ export const useSiteStore = defineStore({
         },
       ];
     },
+
     //Recuperando datos de localhost
     //TODO ampliar para que recupere de otros orígenes
     restoreSavedData() {
@@ -124,6 +95,9 @@ export const useSiteStore = defineStore({
         console.log("Se ha producido un error al recuprar datos");
       }
     },
+
+    //Recuperar json en disco y montarlo en el store
+  
 
     /**
      * GUARDAR TRABAJO EN LOCALSTORAGE

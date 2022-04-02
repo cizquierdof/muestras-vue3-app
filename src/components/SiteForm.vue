@@ -72,9 +72,10 @@
     </span>
     </p>
     <!-----------------------------SAVE FUNCTIONS-------------------------------------------->
-    <div class="rounded p-3">
+    <div class="rounded">
       <button class="btn btn-outline-warning me-2" @click="store.saveJson()">Guarda JSON</button>
       <button class="btn btn-outline-warning me-2" @click="store.saveBatch()">Guarda Batch</button>
+      <button class="btn btn-outline-warning me-2" @click="">Cargar un siitio</button>
     </div>
   </div>
 </template>
