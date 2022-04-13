@@ -2,9 +2,9 @@
 <!-----------------------------------ENCABEZADO-------------------------->
   <div class="">
     <h2 class="text-center">
-    <span class="text-light badge bg-warning mt-2 mx-auto">
+    <span class="text-light badge  bg-warning mt-2 mx-auto">
       {{ store.siteName }}
-    </span><button class="btn btn-danger ms-2" @click="store.reset()">Reset</button>
+    </span><button class="btn rounded-pill btn-outline-danger ms-2" title="Limpiar todos los datos" @click="store.reset()">Nuevo sitio</button>
     </h2>
     <form class="card form text-dark p-2">
       <label for="sitename" class="form-label">Nombre</label>
@@ -75,7 +75,7 @@
     <div class="rounded">
       <button class="btn btn-outline-warning me-2" @click="store.saveJson()">Guarda JSON</button>
       <button class="btn btn-outline-warning me-2" @click="store.saveBatch()">Guarda Batch</button>
-      <button class="btn btn-outline-warning me-2" @click="">Cargar un siitio</button>
+      <button class="btn btn-outline-warning me-2" disabled title="Aun no implementado" @click="">Cargar un sitio</button>
     </div>
   </div>
 </template>

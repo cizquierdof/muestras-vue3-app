@@ -6,6 +6,7 @@
         <tr class="">
           <th class="col">#</th>
           <th class="col">url</th>
+          
           <th class="col"><button class="btn btn-primary btn-sm" @click="store.orden()" title="Ordena la muestra por tipo de página">Tipo</button> </th>
           <th class="col">Shortname</th>
           <th class="col">Migas</th>
