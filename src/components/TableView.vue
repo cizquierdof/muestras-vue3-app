@@ -1,36 +1,37 @@
 <template>
-  <div class="card pt-3">
-
-    <table class="table table-dark table-sm table-striped">
+  <div class="container">
+<div class="row" >
+    <table class="table table-dark table-striped table-sm" >
       <thead>
-        <tr class="">
-          <th class="col">#</th>
-          <th class="col">url</th>
-          
-          <th class="col"><button class="btn btn-primary btn-sm" @click="store.orden()" title="Ordena la muestra por tipo de página">Tipo</button> </th>
-          <th class="col">Shortname</th>
-          <th class="col">Migas</th>
-          <th class="col-1">acción</th>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">url</th>         
+          <th scope="col"><button class="btn btn-primary btn-sm" @click="store.orden()" title="Ordena la muestra por tipo de página">Tipo</button> </th>
+          <th scope="col">Shortname</th>
+          <th scope="col">Migas</th>
+          <th scope="col">acción</th>
         </tr>
       </thead>
+
       <tbody>
-        <tr class="" v-for="(page,index) in store.siteWebPages">
-          <td class="col">{{index}}</td>
-          <td class="col">{{page.webPageUrl}}</td>
-          <td class="col">{{page.webPageType}}</td>
-          <td class="col">{{page.shortName}}</td>
-          <td class="col">{{page.breadcrumb}}</td>
-          <td class="col-1">
-            <button class="btn btn-danger" @click="store.deleteItem(index)">
+        <tr v-for="(page,index) in store.siteWebPages">
+          <td>{{index}}</td>
+          <td class="table-text-wrap">{{page.webPageUrl}}</td>
+          <td class="table-text-wrap">{{page.webPageType}}</td>
+          <td>{{page.shortName}}</td>
+          <td class="table-text-wrap">{{page.breadcrumb}}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" @click="store.deleteItem(index)">
               <span class="fa fa-trash fa-xs" aria-label="Borra línea"></span>
             </button>
-            <button class="btn btn-warning" @click="store.editItem(index)">
+            <button class="btn btn-warning btn-sm" @click="store.editItem(index)">
               <span class="fa fa-edit fa-xs" aria-label="Edita línea"></span>
             </button>
           </td>
         </tr>
       </tbody>
     </table>
+</div>
 
   </div>
 </template>
@@ -48,3 +49,35 @@ export default {
   computed: {},
 };
 </script>
+<style scoped>
+table{
+  min-width: 100%;
+  table-layout: fixed;
+}
+thead th:nth-child(1){
+  width:3%;
+}
+thead th:nth-child(2){
+  width:40%;
+}
+thead th:nth-child(3){
+  width:12%;
+}
+thead th:nth-child(4){
+  width:15%;
+}
+thead th:nth-child(5){
+  width:26%;
+}
+thead th:nth-child(6){
+  width:7%;
+}
+.table-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table-text-wrap{
+  word-wrap: break-word;
+}
+</style>

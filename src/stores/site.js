@@ -82,15 +82,19 @@ export const useSiteStore = defineStore({
       ];
     },
 
-    //Recuperando datos de localhost
-    //TODO ampliar para que recupere de otros orígenes
-    restoreSavedData() {
+    //Recuperando los datosdesde un json válido
+    restoreData(json) {
+       this.siteName = json.siteName;
+        this.siteDomain = json.siteDomain;
+        this.siteWebPages = [...json.siteWebPages];
+    },
+
+    //Restauración desde Local Storage
+    restoreFromLocalStorage() {
       try {
         const savedLocal = localStorage.getItem("saved-site");
         const parsed = JSON.parse(savedLocal);
-        this.siteName = parsed[0].siteName;
-        this.siteDomain = parsed[0].siteDomain;
-        this.siteWebPages = [...parsed[0].siteWebPages];
+        this.restoreData(parsed[0]);
       } catch {
         console.log("Se ha producido un error al recuprar datos");
       }
@@ -98,6 +102,11 @@ export const useSiteStore = defineStore({
 
     //Recuperar json en disco y montarlo en el store
   
+    restorFromDisk(json) {
+      //console.log('json', json);
+      this.restoreData(json[0]);
+      this.saveSite();
+    },
 
     /**
      * GUARDAR TRABAJO EN LOCALSTORAGE

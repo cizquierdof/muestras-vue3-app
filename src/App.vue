@@ -8,19 +8,19 @@ import SiteForm from "./components/SiteForm.vue";
 <template>
   <Cabecera />
 
-  <main class="mx-3">
+  <main class="">
     <!---------------ESTATUS DE LA MUESTRA-------------->
-    <div class="row">
-      <div class="col bg-dark card ms-3 mt-3">
+    <div class="row m-2">
+      <div class="col bg-dark card">
         <SiteForm />
       </div>
     <!---------------FORMULARIO DE PAGINAS-------------->
-      <div class="col card bg-primary ms-3 mt-3">
+      <div class="col card bg-primary ms-3">
         <TableForm />
       </div>
     </div>
     <!-----------------------TABLA DE RESULTADOS--------->
-    <div class="row">
+    <div class="row m-2">
       <TableView />
     </div>
   </main>

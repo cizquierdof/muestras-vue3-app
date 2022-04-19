@@ -1,6 +1,6 @@
-<template>
-  <header class="bg-secondary text-light p-3 row">
-    <h1 class="card-title text-center">Muestra para auditorías web</h1>
+restoreFromLocalStorage<template>
+  <header class="bg-secondary text-light p-2 row">
+    <h1 class="h3 card-title text-center">Muestra para auditorías web</h1>
   </header>
 </template>
 <script>
@@ -10,7 +10,7 @@ export default {
   setup() {
     //Carga de datos guardados en localstorage al montar la cabecera
     onMounted(()=>{
-      store.restoreSavedData();
+      store.restoreFromLocalStorage();
     });
     const store = useSiteStore();
         return {
