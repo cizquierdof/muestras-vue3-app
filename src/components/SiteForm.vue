@@ -6,7 +6,7 @@
         {{ store.siteName }}
       </span>
       <button
-        class="btn rounded-pill btn-outline-danger ms-2"
+        class="btn rounded-pill btn-outline-danger ms-2 fw-bold"
         id="btn-reset"
         title="Limpiar todos los datos"
         @click="store.reset()"
@@ -15,7 +15,7 @@
       </button>
     </h2>
     <form class="card form text-dark p-2">
-      <label for="sitename" class="form-label">Nombre</label>
+      <label for="sitename" class="form-label fw-bold">Nombre</label>
       <input
         class="form-control-sm form-control"
         type="text"
@@ -23,7 +23,7 @@
         placeholder="Nombre del sitio"
         v-model="store.siteName"
       />
-      <label for="sitedomain" class="col-form-label-sm col-form-label"
+      <label for="sitedomain" class="col-form-label-sm col-form-label fw-bold"
         >Dominio</label
       >
       <input
