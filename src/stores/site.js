@@ -149,6 +149,8 @@ export const useSiteStore = defineStore({
      * BORRA UNA PÁGINA DE LA MUESTRA
      */
     deleteItem(index) {
+      const borrar = confirm("¿Está seguro de borrar la línea?");
+      if(!borrar) return;
       this.siteWebPages.splice(index, 1);
       this.saveSite();
     },
@@ -157,7 +159,8 @@ export const useSiteStore = defineStore({
      */
     //Pone en modo edición
     editItem(index) {
-      this.editMode = true;
+      this.editMode = confirm("¿Está seguro de editar la línea?");
+      if(!this.editMode) return;
       this.indice = index;
       this.inUrl = this.siteWebPages[index].webPageUrl;
       this.inType = this.siteWebPages[index].webPageType;

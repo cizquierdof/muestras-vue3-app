@@ -1,7 +1,7 @@
 <template>
   <div class="text-light">
     <h2>Datos de la página</h2>
-    <form @submit.prevent class="card text-light bg-primary mb-2">
+    <form @submit.prevent class="card text-light bg-primary mb-2" autocomplete="on">
       <label class="form-label" for="inurl">URL</label>
       <input
         class="form-control"
@@ -9,6 +9,7 @@
         type="text"
         placeholder="URL"
         v-model="store.inUrl"
+        onclick="this.select()"
         required
       />
       <label class="form-label" for="intype">Tipo de página</label>
@@ -25,6 +26,8 @@
         type="text"
         placeholder="Nombre corto"
         v-model="store.inShortName"
+        onclick="this.select()"
+        v-bind:autocomplete="store.inShortName?'off':'on'"
         required
       />
       <label class="form-label" for="inbreadcrumb">Migas</label>
