@@ -86,6 +86,12 @@
         >
           Guarda Batch
         </button>
+        <button
+          class="col btn btn-outline-warning ms-1"
+          @click="store.openUrlList()"
+        >
+          Despliega
+        </button>
       </div>
       <div
         class="row mt-2 rounded border border-warning"

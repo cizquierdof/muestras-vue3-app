@@ -194,7 +194,7 @@ export const useSiteStore = defineStore({
       this.siteWebPages.forEach((e) => {
         urlBatch +=
           'start chrome --new-tab- "' +
-          decodeURI(e.webPageUrl) +
+          e.webPageUrl +
           '"\n' +
           "timeout /t 1\n";
       });
@@ -247,8 +247,8 @@ export const useSiteStore = defineStore({
         (e) => e.webPageUrl === this.inUrl
       );
       //Comprobación duplicados
-      if (duplicates) {
-        alert("¡URL Duplicada!");
+      if (duplicates&&!confirm("¿Añadir URL Duplicada?")) {
+        return;
       } else {
         const newPage = {
           webPageUrl: this.inUrl,
@@ -260,6 +260,18 @@ export const useSiteStore = defineStore({
         this.siteWebPages.push(newPage);
         this.saveSite();
       }
+    },
+    //Abrir la lista de url en nueva ventana
+    openUrlList() {
+      //const newWindow = window.open(this.siteWebPages[0].webPageUrl, '_blank', 'fullscreen=yes');
+      //newWindow.focus();
+      this.siteWebPages.map(
+        e => {
+          //console.log(e.webPageUrl);
+          window.open(e.webPageUrl, '_blank');
+        }
+      )
+      
     },
   },
 });
