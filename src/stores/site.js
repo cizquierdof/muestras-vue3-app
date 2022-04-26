@@ -266,7 +266,8 @@ export const useSiteStore = defineStore({
       //const newWindow = window.open(url, '_blank', 'fullscreen=yes');
       //newWindow.focus();
       console.log(url);
-      window.open(url, '_blank', 'fullscreen=yes');
+      const newTab = window.open(url, '_blank', '');
+      newTab.focus();
       
     },
     //Abrir la lista de url en nueva ventana
