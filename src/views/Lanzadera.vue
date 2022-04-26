@@ -11,9 +11,6 @@ import { useSiteStore } from "../stores/site";
 export default {
     setup () {
         const store = useSiteStore();
-        
-        console.log('lista de sitios', store.siteWebPages);
-
         return {
             store,
         
