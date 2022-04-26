@@ -261,17 +261,23 @@ export const useSiteStore = defineStore({
         this.saveSite();
       }
     },
-    //Abrir la lista de url en nueva ventana
-    openUrlList() {
-      //const newWindow = window.open(this.siteWebPages[0].webPageUrl, '_blank', 'fullscreen=yes');
+    //Abrir url en nueva pestaña al hacer Ctrl+click en la tabla
+    openUrl(url) {
+      //const newWindow = window.open(url, '_blank', 'fullscreen=yes');
       //newWindow.focus();
-      this.siteWebPages.map(
-        e => {
-          //console.log(e.webPageUrl);
-          window.open(e.webPageUrl, '_blank');
-        }
-      )
+      console.log(url);
+      window.open(url, '_blank', 'fullscreen=yes');
       
     },
+    //Abrir la lista de url en nueva ventana
+    openUrlList() {
+      if (!confirm('No funciona en Chrome, ¿Continuar?')) return;
+    
+      const newWindow=[];
+      this.siteWebPages.forEach((e,i) => {
+        console.log(e.webPageUrl);
+        newWindow[i] = window.open(e.webPageUrl, '_blank');
+      });
+    }
   },
 });

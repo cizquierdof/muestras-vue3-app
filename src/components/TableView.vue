@@ -14,9 +14,16 @@
       </thead>
 
       <tbody>
-        <tr v-for="(page,index) in store.siteWebPages">
+        <tr 
+        v-for="(page,index) in store.siteWebPages">
           <td>{{index}}</td>
-          <td class="table-text-wrap">{{page.webPageUrl}}</td>
+          <td 
+            class="table-text-wrap "
+            id="urlCell"
+            @click.ctrl="store.openUrl(page.webPageUrl)"
+            title="ctrl+click para abrir">
+              {{page.webPageUrl}}
+            </td>
           <td class="table-text-wrap">{{page.webPageType}}</td>
           <td>{{page.shortName}}</td>
           <td class="table-text-wrap">{{page.breadcrumb}}</td>
@@ -79,5 +86,8 @@ thead th:nth-child(6){
 }
 .table-text-wrap{
   word-wrap: break-word;
+}
+#urlCell{
+  cursor: pointer;
 }
 </style>
