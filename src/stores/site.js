@@ -1,3 +1,8 @@
+/*********************************
+ * @description store para las transacciones de la muestra
+ * @author Carlos Izquierdo
+ * 
+ */
 import { defineStore } from "pinia";
 import {PAGE_TYPES} from '../config/config';
 
