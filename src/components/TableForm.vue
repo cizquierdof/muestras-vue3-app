@@ -1,7 +1,11 @@
 <template>
   <div class="text-light">
     <h2>Datos de la página</h2>
-    <form @submit.prevent class="card text-light bg-primary mb-2" autocomplete="on">
+    <form
+      @submit.prevent
+      class="card text-light bg-primary mb-2"
+      autocomplete="on"
+    >
       <label class="form-label" for="inurl">URL</label>
       <input
         class="form-control"
@@ -12,13 +16,30 @@
         onclick="this.select()"
         required
       />
-      <label class="form-label" for="intype">Tipo de página</label>
-      <select class="form-select" id="intype" v-model="store.inType" required>
-        <option disabled value="">Tipo de página</option>
-        <option v-for="type in store.pageTypes" v-bind:value="type.value">
-          {{ type.text }}
-        </option>
-      </select>
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="intype">Tipo de página</label>
+          <select
+            class="form-select"
+            id="intype"
+            v-model="store.inType"
+            required
+          >
+            <option disabled value="">Tipo de página</option>
+            <option v-for="tipo in store.pageTypes" v-bind:value="tipo.value">
+              {{ tipo.text }}
+            </option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label" for="classtype">Clase</label>
+          <select class="form-select" id="classtype">
+            <option disabled selected value="">Clase</option>
+            <option value="pg_web">Página web</option>
+            <option value="document">Documento no web</option>
+          </select>
+        </div>
+      </div>
       <label class="form-label" for="inshortname">Nombre corto</label>
       <input
         class="form-control"
@@ -27,7 +48,7 @@
         placeholder="Nombre corto"
         v-model="store.inShortName"
         onclick="this.select()"
-        v-bind:autocomplete="store.inShortName?'off':'on'"
+        v-bind:autocomplete="store.inShortName ? 'off' : 'on'"
         required
       />
       <label class="form-label" for="inbreadcrumb">Migas</label>
@@ -39,6 +60,42 @@
         v-model="store.inBreadcrumb"
         required
       />
+      <fieldset class="container row  my-2 ">
+        <legend class="h6 bg-warning rounded text-dark">Condicionales</legend>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="r5_2" >
+          <label for="r5_2" class="form-check-label">5.2</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="r5_3" >
+          <label for="r5_3" class="form-check-label">5.3</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="r5_4" >
+          <label for="r5_4" class="form-check-label">5.4</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="r6" >
+          <label for="r6" class="form-check-label">R6</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="r7" >
+          <label for="r7" class="form-check-label">R7</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="aut" >
+          <label for="aut" class="form-check-label">Aut</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="doc" >
+          <label for="doc" class="form-check-label">Doc</label>
+        </div>
+        <div class="form-check col">
+          <input class="form-check-input" type="checkbox" id="apo">
+          <label for="apo" class="form-check-label">Apo</label>
+        </div>
+      </fieldset>
+      
       <button
         v-if="!store.editMode"
         type="submit"
@@ -60,7 +117,7 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity';
+import { ref } from "@vue/reactivity";
 import { useSiteStore } from "../stores/site";
 export default {
   setup() {
@@ -73,3 +130,7 @@ export default {
   computed: {},
 };
 </script>
+
+<style scoped>
+
+</style>

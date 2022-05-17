@@ -30,7 +30,7 @@
         </thead>
 
         <tbody>
-          <tr v-for="(page, index) in store.siteWebPages">
+          <tr v-for="(page, index) in store.siteWebPages" >
             <td>{{ index }}</td>
             <td @click="store.openUrl(page.webPageUrl)" class="boton">
               <span
