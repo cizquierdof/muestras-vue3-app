@@ -18,6 +18,7 @@ export const useSiteStore = defineStore({
     inType: "",
     inShortName: "",
     inBreadcrumb: "",
+    //inClase: "", Calculado
     //Condicionales
     condiciones: {
       r5_2: false,
@@ -41,6 +42,11 @@ export const useSiteStore = defineStore({
     /******************************************************
      * COMPROBACIONES PARA EL ESTATUS DE LA MUESTRA
      */
+    inClase: state => {
+      return state.inType === "DOWNLOADABLE_DOC"
+        ? "DOCUMENTO_NO_WEB"
+        : "PAGINA_WEB";
+    },
     //Número de urls de la muestra
     numUrl: (state) => {
       return state.siteWebPages.reduce((acc, e) => {
@@ -182,6 +188,7 @@ export const useSiteStore = defineStore({
       this.inType = this.siteWebPages[index].webPageType;
       this.inShortName = this.siteWebPages[index].shortName;
       this.inBreadcrumb = this.siteWebPages[index].breadcrumb;
+      this.inClase = this.siteWebPages[index].clase;
       this.condiciones = this.siteWebPages[index].condiciones;
     },
     //guarda la página editada
@@ -192,6 +199,7 @@ export const useSiteStore = defineStore({
         webPageType: this.inType,
         shortName: this.inShortName,
         breadcrumb: this.inBreadcrumb,
+        clase: this.inClase,
         condiciones: this.condiciones
       };
       //restaurando condiciones iniciales
@@ -200,6 +208,7 @@ export const useSiteStore = defineStore({
       this.inType = "";
       this.inShortName = "";
       this.inBreadcrumb = "";
+      this.inClase = "";
       this.condiciones = {
         r5_2: false,
         r5_3: false,
@@ -284,6 +293,7 @@ export const useSiteStore = defineStore({
           webPageType: this.inType,
           shortName: this.inShortName,
           breadcrumb: this.inBreadcrumb,
+          clase: this.inClase,
           condiciones: this.condiciones
         };
 

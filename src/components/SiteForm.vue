@@ -53,16 +53,7 @@
       <span class="badge rounded-pill me-3 bg-secondary position-relative">
         URLS
         <span
-          class="
-            position-absolute
-            top-0
-            start-100
-            translate-middle
-            badge
-            me-3
-            mt-2
-            rounded-pill
-          "
+          class="position-absolute top-0 start-100 translate-middle badge me-3 mt-2 rounded-pill"
           v-bind:class="[store.numUrl < 25 ? 'bg-success' : 'bg-danger']"
         >
           {{ store.numUrl }}
@@ -71,14 +62,7 @@
       <span class="badge rounded-pill bg-secondary position-relative ms-2 mt-2">
         Aleatorias
         <span
-          class="
-            position-absolute
-            top-0
-            start-100
-            translate-middle
-            badge
-            rounded-pill
-          "
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
           v-bind:class="[
             store.numAleatory >= store.numUrl / 10 ? 'bg-success' : 'bg-danger',
           ]"
@@ -164,19 +148,19 @@ export default {
         const url_list = JSON.parse(reader.result);
         //previene y corrige versión antigua de json
         if (!url_list[0].siteWebPages[0].condiciones) {
-          url_list[0].siteWebPages.map(
-            (e) =>
-              (e.condiciones = {
-                r5_2: false,
-                r5_3: false,
-                r5_4: false,
-                r6: false,
-                r7: false,
-                herramientas_autor: false,
-                documentacion: false,
-                servicios_apoyo: false,
-              })
-          );
+          url_list[0].siteWebPages.map((e) => {
+            e.condiciones = {
+              r5_2: false,
+              r5_3: false,
+              r5_4: false,
+              r6: false,
+              r7: false,
+              herramientas_autor: false,
+              documentacion: false,
+              servicios_apoyo: false,
+            };
+            e.clase = (e.webPageType === "DOWNLOADABLE_DOC") ? "DOCUMENTO_NO_WEB" : "PAGINA_WEB";
+          });
         }
         store.restorFromDisk(url_list);
       };
@@ -194,19 +178,19 @@ export default {
         const url_list = JSON.parse(reader.result);
         //previene y corrige versión antigua de json
         if (!url_list[0].siteWebPages[0].condiciones) {
-          url_list[0].siteWebPages.map(
-            (e) =>
-              (e.condiciones = {
-                r5_2: false,
-                r5_3: false,
-                r5_4: false,
-                r6: false,
-                r7: false,
-                herramientas_autor: false,
-                documentacion: false,
-                servicios_apoyo: false,
-              })
-          );
+          url_list[0].siteWebPages.map((e) => {
+            e.condiciones = {
+              r5_2: false,
+              r5_3: false,
+              r5_4: false,
+              r6: false,
+              r7: false,
+              herramientas_autor: false,
+              documentacion: false,
+              servicios_apoyo: false,
+            };
+            e.clase = (e.webPageType === "DOWNLOADABLE_DOC") ? "DOCUMENTO_NO_WEB" : "PAGINA_WEB";
+          });
         }
 
         store.restorFromDisk(url_list);
