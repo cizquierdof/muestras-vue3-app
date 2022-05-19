@@ -25,6 +25,14 @@
             </th>
             <th scope="col">Shortname</th>
             <th scope="col">Migas</th>
+            <th scope="col">5.2</th>
+            <th scope="col">5.3</th>
+            <th scope="col">5.4</th>
+            <th scope="col">R6</th>
+            <th scope="col">R7</th>
+            <th scope="col">Au</th>
+            <th scope="col">D</th>
+            <th scope="col">A</th>
             <th scope="col">acción</th>
           </tr>
         </thead>
@@ -48,6 +56,14 @@
             <td class="table-text-wrap">{{ page.webPageType }}</td>
             <td>{{ page.shortName }}</td>
             <td class="table-text-wrap">{{ page.breadcrumb }}</td>
+            <td>{{(page.condiciones.r5_2)?'x':''}}</td>
+            <td>{{page.condiciones.r5_3?'x':''}}</td>
+            <td>{{page.condiciones.r5_4?'x':''}}</td>
+            <td>{{page.condiciones.r6?'x':''}}</td>
+            <td>{{page.condiciones.r7?'x':''}}</td>
+            <td>{{page.condiciones.herramientas_autor?'x':''}}</td>
+            <td>{{page.condiciones.documentacion?'x':''}}</td>
+            <td>{{page.condiciones.servicios_apoyo?'x':''}}</td>
             <td>
               <button
                 class="btn btn-danger btn-sm"
@@ -95,7 +111,7 @@ thead th:nth-child(2) {
 }
 
 thead th:nth-child(3) {
-  width: 40%;
+  width: 31%;
 }
 thead th:nth-child(4) {
   width: 11%;
@@ -104,9 +120,33 @@ thead th:nth-child(5) {
   width: 15%;
 }
 thead th:nth-child(6) {
-  width: 24%;
+  width: 18%;
 }
 thead th:nth-child(7) {
+  width: 3%;
+}
+thead th:nth-child(8) {
+  width: 3%;
+}
+thead th:nth-child(9) {
+  width: 3%;
+}
+thead th:nth-child(10) {
+  width: 3%;
+}
+thead th:nth-child(11) {
+  width: 3%;
+}
+thead th:nth-child(12) {
+  width: 3%;
+}
+thead th:nth-child(13) {
+  width: 2%;
+}
+thead th:nth-child(14) {
+  width: 2%;
+}
+thead th:nth-child(15) {
   width: 6%;
 }
 .table-text {

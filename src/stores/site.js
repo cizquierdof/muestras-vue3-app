@@ -18,6 +18,17 @@ export const useSiteStore = defineStore({
     inType: "",
     inShortName: "",
     inBreadcrumb: "",
+    //Condicionales
+    condiciones: {
+      r5_2: false,
+      r5_3:false,
+      r5_4: false,
+      r6: false,
+      r7: false,
+      herramientas_autor: false,
+      documentacion: false,
+      servicios_apoyo: false
+    },
     siteWebPages: [], //Array de páginas
     editMode:false, //flag del modo edición 
   }),
@@ -171,6 +182,7 @@ export const useSiteStore = defineStore({
       this.inType = this.siteWebPages[index].webPageType;
       this.inShortName = this.siteWebPages[index].shortName;
       this.inBreadcrumb = this.siteWebPages[index].breadcrumb;
+      this.condiciones = this.siteWebPages[index].condiciones;
     },
     //guarda la página editada
     saveModified() {
@@ -180,12 +192,24 @@ export const useSiteStore = defineStore({
         webPageType: this.inType,
         shortName: this.inShortName,
         breadcrumb: this.inBreadcrumb,
+        condiciones: this.condiciones
       };
+      //restaurando condiciones iniciales
       this.indice = null;
       this.inUrl = "";
       this.inType = "";
       this.inShortName = "";
       this.inBreadcrumb = "";
+      this.condiciones = {
+        r5_2: false,
+        r5_3: false,
+        r5_4: false,
+        r6: false,
+        r7: false,
+        herramientas_autor: false,
+        documentacion: false,
+        servicios_apoyo: false,
+      };
       this.editMode = false;
       this.saveSite();
     },
@@ -260,6 +284,7 @@ export const useSiteStore = defineStore({
           webPageType: this.inType,
           shortName: this.inShortName,
           breadcrumb: this.inBreadcrumb,
+          condiciones: this.condiciones
         };
 
         this.siteWebPages.push(newPage);
