@@ -1,10 +1,10 @@
 /*********************************
  * @description store para las transacciones de la muestra
  * @author Carlos Izquierdo
- * 
+ *
  */
 import { defineStore } from "pinia";
-import {PAGE_TYPES} from '../config/config';
+import { PAGE_TYPES } from "../config/config";
 
 export const useSiteStore = defineStore({
   id: "site",
@@ -20,18 +20,16 @@ export const useSiteStore = defineStore({
     inBreadcrumb: "",
     //inClase: "", Calculado
     //Condicionales
-    condiciones: {
-      r5_2: false,
-      r5_3:false,
-      r5_4: false,
-      r6: false,
-      r7: false,
-      herramientas_autor: false,
-      documentacion: false,
-      servicios_apoyo: false
-    },
+    r5_2: false,
+    r5_3: false,
+    r5_4: false,
+    r6: false,
+    r7: false,
+    herramientas_autor: false,
+    documentacion: false,
+    servicios_apoyo: false,
     siteWebPages: [], //Array de páginas
-    editMode:false, //flag del modo edición 
+    editMode: false, //flag del modo edición
   }),
 
   /*****************************************************
@@ -42,7 +40,7 @@ export const useSiteStore = defineStore({
     /******************************************************
      * COMPROBACIONES PARA EL ESTATUS DE LA MUESTRA
      */
-    inClase: state => {
+    Clase: (state) => {
       return state.inType === "DOWNLOADABLE_DOC"
         ? "DOCUMENTO_NO_WEB"
         : "PAGINA_WEB";
@@ -106,9 +104,9 @@ export const useSiteStore = defineStore({
 
     //Recuperando los datosdesde un json válido
     restoreData(json) {
-       this.siteName = json.siteName;
-        this.siteDomain = json.siteDomain;
-        this.siteWebPages = [...json.siteWebPages];
+      this.siteName = json.siteName;
+      this.siteDomain = json.siteDomain;
+      this.siteWebPages = [...json.siteWebPages];
     },
 
     //Restauración desde Local Storage
@@ -123,7 +121,7 @@ export const useSiteStore = defineStore({
     },
 
     //Recuperar json en disco y montarlo en el store
-  
+
     restorFromDisk(json) {
       //console.log('json', json);
       this.restoreData(json[0]);
@@ -167,12 +165,46 @@ export const useSiteStore = defineStore({
         alert("¡Los datos se han borrado!");
       }
     },
+    /**
+     * AÑADE URL
+     */
+    addItem() {
+      this.inUrl = this.inUrl.trim();
+      const duplicates = this.siteWebPages.some(
+        (e) => e.webPageUrl === this.inUrl
+      );
+      //Comprobación duplicados
+      if (duplicates && !confirm("¿Añadir URL Duplicada?")) {
+        return;
+      } else {
+        const newPage = {
+          webPageUrl: this.inUrl,
+          webPageType: this.inType,
+          shortName: this.inShortName,
+          breadcrumb: this.inBreadcrumb,
+          clase: this.Clase,
+          condiciones: {
+            r5_2: this.r5_2,
+            r5_3: this.r5_3,
+            r5_4: this.r5_4,
+            r6: this.r6,
+            r7: this.r7,
+            herramientas_autor: this.herramientas_autor,
+            documentacion: this.documentacion,
+            servicios_apoyo: this.servicios_apoyo,
+          },
+        };
+
+        this.siteWebPages.push(newPage);
+        this.saveSite();
+      }
+    },
     /***
      * BORRA UNA PÁGINA DE LA MUESTRA
      */
     deleteItem(index) {
       const borrar = confirm("¿Está seguro de borrar la línea?");
-      if(!borrar) return;
+      if (!borrar) return;
       this.siteWebPages.splice(index, 1);
       this.saveSite();
     },
@@ -182,14 +214,24 @@ export const useSiteStore = defineStore({
     //Pone en modo edición
     editItem(index) {
       this.editMode = confirm("¿Está seguro de editar la línea?");
-      if(!this.editMode) return;
+      if (!this.editMode) return;
       this.indice = index;
       this.inUrl = this.siteWebPages[index].webPageUrl;
       this.inType = this.siteWebPages[index].webPageType;
       this.inShortName = this.siteWebPages[index].shortName;
       this.inBreadcrumb = this.siteWebPages[index].breadcrumb;
-      this.inClase = this.siteWebPages[index].clase;
-      this.condiciones = this.siteWebPages[index].condiciones;
+      //this.inClase = this.siteWebPages[index].clase;
+      //this.condiciones = this.siteWebPages[index].condiciones;
+      this.r5_2 = this.siteWebPages[index].condiciones.r5_2;
+      this.r5_3 = this.siteWebPages[index].condiciones.r5_3;
+      this.r5_4 = this.siteWebPages[index].condiciones.r5_4;
+      this.r6 = this.siteWebPages[index].condiciones.r6;
+      this.r7 = this.siteWebPages[index].condiciones.r7;
+      this.herramientas_autor =
+        this.siteWebPages[index].condiciones.herramientas_autor;
+      this.documentacion = this.siteWebPages[index].condiciones.documentacion;
+      this.servicios_apoyo =
+        this.siteWebPages[index].condiciones.servicios_apoyo;
     },
     //guarda la página editada
     saveModified() {
@@ -199,8 +241,17 @@ export const useSiteStore = defineStore({
         webPageType: this.inType,
         shortName: this.inShortName,
         breadcrumb: this.inBreadcrumb,
-        clase: this.inClase,
-        condiciones: this.condiciones
+        clase: this.Clase,
+        condiciones: {
+          r5_2: this.r5_2,
+          r5_3: this.r5_3,
+          r5_4: this.r5_4,
+          r6: this.r6,
+          r7: this.r7,
+          herramientas_autor: this.herramientas_autor,
+          documentacion: this.documentacion,
+          servicios_apoyo: this.servicios_apoyo,
+        },
       };
       //restaurando condiciones iniciales
       this.indice = null;
@@ -208,17 +259,15 @@ export const useSiteStore = defineStore({
       this.inType = "";
       this.inShortName = "";
       this.inBreadcrumb = "";
-      this.inClase = "";
-      this.condiciones = {
-        r5_2: false,
-        r5_3: false,
-        r5_4: false,
-        r6: false,
-        r7: false,
-        herramientas_autor: false,
-        documentacion: false,
-        servicios_apoyo: false,
-      };
+      this.r5_2 = false;
+      this.r5_3 = false;
+      this.r5_4 = false;
+      this.r6 = false;
+      this.r7 = false;
+      this.herramientas_autor = false;
+      this.documentacion = false;
+      this.servicios_apoyo = false;
+
       this.editMode = false;
       this.saveSite();
     },
@@ -231,10 +280,7 @@ export const useSiteStore = defineStore({
       let urlBatch = "";
       this.siteWebPages.forEach((e) => {
         urlBatch +=
-          'start chrome --new-tab- "' +
-          e.webPageUrl +
-          '"\n' +
-          "timeout /t 1\n";
+          'start chrome --new-tab- "' + e.webPageUrl + '"\n' + "timeout /t 1\n";
       });
 
       const batchBlob = new Blob([urlBatch]);
@@ -260,7 +306,7 @@ export const useSiteStore = defineStore({
     saveJson() {
       //console.log(this.urlList()[0].siteWebPages);
       let parsed = "";
-      const version = confirm('¿quieres versión 1');
+      const version = confirm("¿quieres versión 1");
       if (version) {
         const jsonv1 = [
           {
@@ -282,68 +328,42 @@ export const useSiteStore = defineStore({
         parsed = JSON.stringify(jsonv1);
       } else {
         parsed = JSON.stringify(this.urlList());
-      } 
-     
-      alert(`Finalmente versión ${version}`);
-        const jsonBlob = new Blob([parsed]);
-        const blobUrl = URL.createObjectURL(jsonBlob);
-        const link = document.createElement("a");
-        link.href = blobUrl;
-        link.download = `url_list_v${version?'1':'2'}.json`;
-        document.body.appendChild(link);
-        link.dispatchEvent(
-          new MouseEvent("click", {
-            bubbles: true,
-            cancelable: true,
-            view: window,
-          })
-          );
-          document.body.removeChild(link); //elimina el link del body
-    },
-
-    /**
-     * AÑADE URL
-     */
-    addItem() {
-      this.inUrl = this.inUrl.trim();
-      const duplicates = this.siteWebPages.some(
-        (e) => e.webPageUrl === this.inUrl
-      );
-      //Comprobación duplicados
-      if (duplicates&&!confirm("¿Añadir URL Duplicada?")) {
-        return;
-      } else {
-        const newPage = {
-          webPageUrl: this.inUrl,
-          webPageType: this.inType,
-          shortName: this.inShortName,
-          breadcrumb: this.inBreadcrumb,
-          clase: this.inClase,
-          condiciones: this.condiciones
-        };
-
-        this.siteWebPages.push(newPage);
-        this.saveSite();
       }
+
+      alert(`Finalmente versión ${version}`);
+      const jsonBlob = new Blob([parsed]);
+      const blobUrl = URL.createObjectURL(jsonBlob);
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = `url_list_v${version ? "1" : "2"}.json`;
+      document.body.appendChild(link);
+      link.dispatchEvent(
+        new MouseEvent("click", {
+          bubbles: true,
+          cancelable: true,
+          view: window,
+        })
+      );
+      document.body.removeChild(link); //elimina el link del body
     },
+
     //Abrir url en nueva pestaña al hacer Ctrl+click en la tabla
     openUrl(url) {
       //const newWindow = window.open(url, '_blank', 'fullscreen=yes');
       //newWindow.focus();
       console.log(url);
-      const newTab = window.open(url, '_blank', '');
+      const newTab = window.open(url, "_blank", "");
       newTab.focus();
-      
     },
     //Abrir la lista de url en nueva ventana
     openUrlList() {
-      if (!confirm('No funciona en Chrome, ¿Continuar?')) return;
-    
-      const newWindow=[];
-      this.siteWebPages.forEach((e,i) => {
+      if (!confirm("No funciona en Chrome, ¿Continuar?")) return;
+
+      const newWindow = [];
+      this.siteWebPages.forEach((e, i) => {
         console.log(e.webPageUrl);
-        newWindow[i] = window.open(e.webPageUrl, '_blank');
+        newWindow[i] = window.open(e.webPageUrl, "_blank");
       });
-    }
+    },
   },
 });
