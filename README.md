@@ -1,6 +1,5 @@
 # Muestras Vue3 y Pinia
 
-## Ya sube a Gitlab
 
 App para recoger páginas web de un sitio y gnerar una muestra válida para auditorías del Observatorio de accesibilidad.
 
