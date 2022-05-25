@@ -1,5 +1,7 @@
 # Muestras Vue3 y Pinia
 
+## Ya sube a Gitlab
+
 App para recoger páginas web de un sitio y gnerar una muestra válida para auditorías del Observatorio de accesibilidad.
 
 La app recopila los datos básicos del sitio: Nombre y dominio y genera un identificador partiendo del nombre eliminando espacios y carácetres no ascii.
