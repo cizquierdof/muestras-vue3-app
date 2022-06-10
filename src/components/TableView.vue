@@ -38,7 +38,7 @@
         </thead>
 
         <tbody>
-          <tr v-for="(page, index) in store.siteWebPages" >
+          <tr v-for="(page, index) in store.siteWebPages">
             <td>{{ index }}</td>
             <td @click="store.openUrl(page.webPageUrl)" class="boton">
               <span
@@ -46,36 +46,70 @@
                 class="fa-solid fa-up-right-from-square text-warning"
               ></span>
             </td>
-            <td
-              class="table-text-wrap"
-              @click.ctrl="store.openUrl(page.webPageUrl)"
-              title="ctrl+click para abrir en nueva pestaña"
-            >
-              {{ page.webPageUrl }}
+            <td class="cell-text-overflow">
+              <a
+                tabindex="0"
+                role="button"
+                data-bs-trigger="focus"
+                title="URL"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                :data-bs-content="page.webPageUrl"
+                data-bs-custom-class="custom-popover"
+                >{{ page.webPageUrl }}</a
+              >
             </td>
-            <td class="table-text-wrap">{{ page.webPageType }}</td>
-            <td>{{ page.shortName }}</td>
-            <td class="table-text-wrap">{{ page.breadcrumb }}</td>
-            <td>{{(page.condiciones.r5_2)?'x':''}}</td>
-            <td>{{page.condiciones.r5_3?'x':''}}</td>
-            <td>{{page.condiciones.r5_4?'x':''}}</td>
-            <td>{{page.condiciones.r6?'x':''}}</td>
-            <td>{{page.condiciones.r7?'x':''}}</td>
-            <td>{{page.condiciones.herramientas_autor?'x':''}}</td>
-            <td>{{page.condiciones.documentacion?'x':''}}</td>
-            <td>{{page.condiciones.servicios_apoyo?'x':''}}</td>
+            <td class="cell-text-overflow">{{ page.webPageType }}</td>
+            <td class="cell-text-overflow">
+              <a
+                tabindex="0"
+                role="button"
+                data-bs-trigger="focus"
+                title="Nombre corto"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                :data-bs-content="page.shortName"
+                data-bs-custom-class="custom-popover"
+              >
+                {{ page.shortName }}
+              </a>
+            </td>
+            <td class="cell-text-overflow">
+              <a
+                tabindex="0"
+                role="button"
+                data-bs-trigger="focus"
+                title="Migas"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                :data-bs-content="page.breadcrumb"
+                data-bs-custom-class="custom-popover"
+              >
+                {{ page.breadcrumb }}
+              </a>
+            </td>
+            <td>{{ page.condiciones.r5_2 ? "x" : "" }}</td>
+            <td>{{ page.condiciones.r5_3 ? "x" : "" }}</td>
+            <td>{{ page.condiciones.r5_4 ? "x" : "" }}</td>
+            <td>{{ page.condiciones.r6 ? "x" : "" }}</td>
+            <td>{{ page.condiciones.r7 ? "x" : "" }}</td>
+            <td>{{ page.condiciones.herramientas_autor ? "x" : "" }}</td>
+            <td>{{ page.condiciones.documentacion ? "x" : "" }}</td>
+            <td>{{ page.condiciones.servicios_apoyo ? "x" : "" }}</td>
             <td>
               <button
                 class="btn btn-danger btn-sm"
+                aria-label="Borra línea"
                 @click="store.deleteItem(index)"
               >
-                <span class="fa fa-trash fa-xs" aria-label="Borra línea"></span>
+                <span class="fa fa-trash fa-xs" ></span>
               </button>
               <button
                 class="btn btn-warning btn-sm"
+                aria-label="Edita línea"
                 @click="store.editItem(index)"
               >
-                <span class="fa fa-edit fa-xs" aria-label="Edita línea"></span>
+                <span class="fa fa-edit fa-xs" ></span>
               </button>
             </td>
           </tr>
@@ -96,9 +130,28 @@ export default {
     };
   },
   computed: {},
+  mounted() {
+    // Initialize tooltips
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var tooltipList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  },
 };
 </script>
-<style scoped>
+
+<style >
+.custom-popover {
+  --bs-popover-max-width: 300px;
+  --bs-popover-border-color: var(--bs-primary);
+  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}
+
 table {
   min-width: 100%;
   table-layout: fixed;
@@ -149,12 +202,16 @@ thead th:nth-child(14) {
 thead th:nth-child(15) {
   width: 6%;
 }
-.table-text {
+.cell-text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.table-text-wrap {
+.cell-text-overflow span:hover {
+  position: fixed;
+  width: 25rem;
+}
+.cell-text {
   word-wrap: break-word;
 }
 .boton {

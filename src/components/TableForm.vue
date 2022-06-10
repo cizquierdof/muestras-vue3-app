@@ -77,6 +77,7 @@
             type="checkbox"
             id="r5_2"
             v-model="store.r5_2"
+            aria-label="Genéricos"
           />
           <label for="r5_2" class="form-check-label">5.2</label>
         </div>
@@ -86,6 +87,7 @@
             type="checkbox"
             id="r5_3"
             v-model="store.r5_3"
+            aria-label="Biomética"
           />
           <label for="r5_3" class="form-check-label">5.3</label>
         </div>
@@ -95,6 +97,7 @@
             type="checkbox"
             id="r5_4"
             v-model="store.r5_4"
+            aria-label="Preservación en conversiones"
           />
           <label for="r5_4" class="form-check-label">5.4</label>
         </div>
@@ -104,6 +107,7 @@
             type="checkbox"
             id="r6"
             v-model="store.r6"
+            aria-label="Transmisión de voz bidireccional"
           />
           <label for="r6" class="form-check-label">R6</label>
         </div>
@@ -113,6 +117,7 @@
             type="checkbox"
             id="r7"
             v-model="store.r7"
+            aria-label="Reproducción de video"
           />
           <label for="r7" class="form-check-label">R7</label>
         </div>
@@ -122,8 +127,9 @@
             type="checkbox"
             id="aut"
             v-model="store.herramientas_autor"
+            aria-label="Herramientas de autor"
           />
-          <label for="aut" class="form-check-label">Aut</label>
+          <label for="aut" class="form-check-label" >Aut</label>
         </div>
         <div class="form-check col" title="Documentación suministrada">
           <input
@@ -131,6 +137,7 @@
             type="checkbox"
             id="doc"
             v-model="store.documentacion"
+            aria-label="Documentación"
           />
           <label for="doc" class="form-check-label">Doc</label>
         </div>
@@ -140,6 +147,7 @@
             type="checkbox"
             id="apo"
             v-model="store.servicios_apoyo"
+            aria-label="Servicios de apoyo"
           />
           <label for="apo" class="form-check-label">Apo</label>
         </div>
