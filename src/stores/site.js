@@ -304,36 +304,12 @@ export const useSiteStore = defineStore({
      * SALVA EL JSON
      */
     saveJson() {
-     /* let parsed = "";
-      const version = confirm("¿quieres versión 1");
-       if (version) {
-        const jsonv1 = [
-          {
-            siteId: this.urlList()[0].siteId,
-            siteName: this.urlList()[0].siteName,
-            siteDomain: this.urlList()[0].siteDomain,
-            siteWebPages: [],
-          },
-        ];
-        this.urlList()[0].siteWebPages.map((e) => {
-          const url = {
-            webPageUrl: e.webPageUrl,
-            webPageType: e.webPageType,
-            shortName: e.shortName,
-            breadcrumb: e.breadcrumb,
-          };
-          jsonv1[0].siteWebPages.push(url);
-        });
-        parsed = JSON.stringify(jsonv1);
-      } else {
-      }
-      */
       const parsed = JSON.stringify(this.urlList());
       const jsonBlob = new Blob([parsed]);
       const blobUrl = URL.createObjectURL(jsonBlob);
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = `url_list_v2.json`;
+      link.download = this.siteName + `_v2.json`;
       document.body.appendChild(link);
       link.dispatchEvent(
         new MouseEvent("click", {
