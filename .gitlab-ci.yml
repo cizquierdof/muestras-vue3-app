@@ -1,0 +1,151 @@
+stages:    
+  - prepare      
+  - test
+  - build
+  - testIntegration
+  - testE2E
+#  - accessibility
+
+
+  
+variables:
+   CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"  
+#  este test se hace sobre url publicas asi que solo poner si se esta haciendo un deploy en pre
+#   a11y_urls: ""
+
+#include:
+#  - template: "Verify/Accessibility.gitlab-ci.yml"
+
+default:
+   image: cypress/base:16.13.0
+   cache: &cache
+     key: "$CI_COMMIT_REF_SLUG"
+     paths:
+       - node_modules/
+       - cache/Cypress
+     policy: pull
+
+prepare:
+  stage: prepare
+  tags: 
+    - docker
+  interruptible: true
+  cache:
+    <<: *cache
+    policy: push
+  script:
+    - npm i
+    - npm install -g pnpm
+  
+
+lint:
+  stage: test
+  tags: 
+    - docker   
+  cache:
+    <<: *cache
+    policy: pull 
+  interruptible: true
+  script:
+    - CI=true npm run lint:ci
+  artifacts:
+    reports:
+      junit: unitTestReports/junitStyleReport.xml
+
+unit-test-coverage: 
+  stage: test
+  needs: [lint]
+  tags: 
+    - docker     
+  cache:
+    <<: *cache
+    policy: pull 
+  script:
+    - CI=true npm run test:and:coverage
+  artifacts:
+    reports:
+      junit: unitTestReports/junitStyleReport.xml
+      # cobertura: coverage/cobertura-coverage.xml
+# esto es si cambia de version por actualizacion ver que ha cambiado la key
+      coverage_report:
+         coverage_format: cobertura
+         path: coverage/cobertura-coverage.xml
+
+cypress-Integration:
+  stage: testIntegration
+  tags: 
+    - docker
+  cache:
+    <<: *cache
+    policy: pull 
+  script:
+    - $(npm bin)/cypress cache path
+    - $(npm bin)/cypress cache list
+    - $(npm bin)/cypress verify
+    - npm ci 
+    # - npm install --global wait-for-localhost-cli
+    - npm run preview --host &
+    # - wait-for-localhost 3333 && npm run test:integration:silent
+    - npm run test:integration:silent
+  artifacts:
+    expire_in: 1 week
+    when: always
+    paths:
+    - cypress/screenshots/integration
+    - cypress/videos/integration
+
+build-site:
+  stage: build
+  tags: 
+    - docker
+  cache:
+    <<: *cache
+    policy: pull
+  script:
+    - CI=true npm run build:noSSG 
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist
+      - ./package-lock.json
+
+cypress-e2e:
+  stage: testE2E
+  tags: 
+    - docker
+  cache:
+    <<: *cache
+    policy: pull 
+  script:
+    - $(npm bin)/cypress cache path
+    - $(npm bin)/cypress cache list
+    - $(npm bin)/cypress verify
+    - npm ci
+    - npm run preview --host &
+    - npm run test:e2e:silent
+  artifacts:
+    expire_in: 1 week
+    when: always
+    paths:
+    - cypress/screenshots/e2e/electron
+    - cypress/videos/e2e/electron
+
+# cypress-e2e-chrome:
+#   image: cypress/browsers:node14.19.0-chrome100-ff99-edge
+#   stage: testE2E
+#   needs: [cypress-e2e]
+#   cache:
+#     <<: *cache
+#     policy: pull
+#   tags: 
+#     - docker
+#   script:
+#     - npm ci
+#     - npm run preview --host &
+#     - npm run test:e2e:silent:chrome
+#   artifacts:
+#     expire_in: 1 week
+#     when: always
+#     paths:
+#     - cypress/screenshots/e2e/chrome99
+#     - cypress/videos/e2e/chrome99

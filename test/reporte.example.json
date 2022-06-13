@@ -1,0 +1,2914 @@
+{
+    "testEngine": {
+        "name": "axe-core",
+        "version": "4.4.2"
+    },
+    "testRunner": {
+        "name": "axe"
+    },
+    "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0; en-us; GT-I9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+        "windowWidth": 360,
+        "windowHeight": 640,
+        "orientationAngle": 0,
+        "orientationType": "portrait-primary"
+    },
+    "timestamp": "2022-06-12T20:49:31.498Z",
+    "url": "http://www1.insuit.com/?tm=1&subid4=1655066969.0310790000&kw=Accounting+Software&KW1=Business%20Accounting%20Software&KW2=Invoice%20Management%20Software&KW3=Personal%20Accounting%20Software&KW4=Tax%20Management%20Software&KW5=My%20Account%20Management%20Software&searchbox=0&domainname=0&backfill=0",
+    "toolOptions": {
+        "runOnly": {
+            "type": "tag",
+            "values": [
+                "wcag2a",
+                "wcag2aa",
+                "wcag21a",
+                "wcag21aa"
+            ]
+        },
+        "reporter": "v1"
+    },
+    "inapplicable": [
+        {
+            "id": "area-alt",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "wcag244",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures <area> elements of image maps have alternate text",
+            "help": "Active <area> elements must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/area-alt?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-command-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures every ARIA button, link and menuitem has an accessible name",
+            "help": "ARIA commands must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-command-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-input-field-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412",
+                "ACT"
+            ],
+            "description": "Ensures every ARIA input field has an accessible name",
+            "help": "ARIA input fields must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-input-field-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-meter-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag111"
+            ],
+            "description": "Ensures every ARIA meter node has an accessible name",
+            "help": "ARIA meter nodes must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-meter-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-progressbar-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag111"
+            ],
+            "description": "Ensures every ARIA progressbar node has an accessible name",
+            "help": "ARIA progressbar nodes must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-progressbar-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-required-children",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures elements with an ARIA role that require child roles contain them",
+            "help": "Certain ARIA roles must contain particular children",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-required-children?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-required-parent",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+            "help": "Certain ARIA roles must be contained by particular parents",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-required-parent?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-roledescription",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensure aria-roledescription is only used on elements with an implicit or explicit role",
+            "help": "aria-roledescription must be on elements with a semantic role",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-roledescription?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-toggle-field-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412",
+                "ACT"
+            ],
+            "description": "Ensures every ARIA toggle field has an accessible name",
+            "help": "ARIA toggle fields must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-toggle-field-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "aria-tooltip-name",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures every ARIA tooltip node has an accessible name",
+            "help": "ARIA tooltip nodes must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-tooltip-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "audio-caption",
+            "impact": null,
+            "tags": [
+                "cat.time-and-media",
+                "wcag2a",
+                "wcag121",
+                "section508",
+                "section508.22.a"
+            ],
+            "description": "Ensures <audio> elements have captions",
+            "help": "<audio> elements must have a captions track",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/audio-caption?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "autocomplete-valid",
+            "impact": null,
+            "tags": [
+                "cat.forms",
+                "wcag21aa",
+                "wcag135"
+            ],
+            "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+            "help": "autocomplete attribute must be used correctly",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/autocomplete-valid?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "blink",
+            "impact": null,
+            "tags": [
+                "cat.time-and-media",
+                "wcag2a",
+                "wcag222",
+                "section508",
+                "section508.22.j"
+            ],
+            "description": "Ensures <blink> elements are not used",
+            "help": "<blink> elements are deprecated and must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/blink?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "button-name",
+            "impact": null,
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures buttons have discernible text",
+            "help": "Buttons must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "definition-list",
+            "impact": null,
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures <dl> elements are structured correctly",
+            "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/definition-list?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "dlitem",
+            "impact": null,
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+            "help": "<dt> and <dd> elements must be contained by a <dl>",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/dlitem?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "duplicate-id-active",
+            "impact": null,
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ],
+            "description": "Ensures every id attribute value of active elements is unique",
+            "help": "IDs of active elements must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "duplicate-id-aria",
+            "impact": null,
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ],
+            "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+            "help": "IDs used in ARIA and labels must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "form-field-multiple-labels",
+            "impact": null,
+            "tags": [
+                "cat.forms",
+                "wcag2a",
+                "wcag332"
+            ],
+            "description": "Ensures form field does not have multiple label elements",
+            "help": "Form field must not have multiple label elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/form-field-multiple-labels?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "frame-focusable-content",
+            "impact": null,
+            "tags": [
+                "cat.keyboard",
+                "wcag2a",
+                "wcag211"
+            ],
+            "description": "Ensures <frame> and <iframe> elements with focusable content do not have tabindex=-1",
+            "help": "Frames with focusable content must not have tabindex=-1",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "input-button-name",
+            "impact": null,
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a"
+            ],
+            "description": "Ensures input buttons have discernible text",
+            "help": "Input buttons must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/input-button-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "input-image-alt",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures <input type=\"image\"> elements have alternate text",
+            "help": "Image buttons must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/input-image-alt?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "label",
+            "impact": null,
+            "tags": [
+                "cat.forms",
+                "wcag2a",
+                "wcag412",
+                "wcag131",
+                "section508",
+                "section508.22.n",
+                "ACT"
+            ],
+            "description": "Ensures every form element has a label",
+            "help": "Form elements must have labels",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/label?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "list",
+            "impact": null,
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures that lists are structured correctly",
+            "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/list?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "listitem",
+            "impact": null,
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ],
+            "description": "Ensures <li> elements are used semantically",
+            "help": "<li> elements must be contained in a <ul> or <ol>",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/listitem?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "marquee",
+            "impact": null,
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag222"
+            ],
+            "description": "Ensures <marquee> elements are not used",
+            "help": "<marquee> elements are deprecated and must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/marquee?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "meta-refresh",
+            "impact": null,
+            "tags": [
+                "cat.time-and-media",
+                "wcag2a",
+                "wcag221",
+                "wcag224",
+                "wcag325"
+            ],
+            "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+            "help": "Timed refresh must not exist",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "object-alt",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a"
+            ],
+            "description": "Ensures <object> elements have alternate text",
+            "help": "<object> elements must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/object-alt?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "role-img-alt",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures [role='img'] elements have alternate text",
+            "help": "[role='img'] elements must have an alternative text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/role-img-alt?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "scrollable-region-focusable",
+            "impact": null,
+            "tags": [
+                "cat.keyboard",
+                "wcag2a",
+                "wcag211"
+            ],
+            "description": "Ensure elements that have scrollable content are accessible by keyboard",
+            "help": "Scrollable region must have keyboard access",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/scrollable-region-focusable?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "select-name",
+            "impact": null,
+            "tags": [
+                "cat.forms",
+                "wcag2a",
+                "wcag412",
+                "wcag131",
+                "section508",
+                "section508.22.n",
+                "ACT"
+            ],
+            "description": "Ensures select element has an accessible name",
+            "help": "Select element must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/select-name?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "server-side-image-map",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag211",
+                "section508",
+                "section508.22.f"
+            ],
+            "description": "Ensures that server-side image maps are not used",
+            "help": "Server-side image maps must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/server-side-image-map?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "svg-img-alt",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
+            "help": "<svg> elements with an img role must have an alternative text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/svg-img-alt?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "td-headers-attr",
+            "impact": null,
+            "tags": [
+                "cat.tables",
+                "wcag2a",
+                "wcag131",
+                "section508",
+                "section508.22.g"
+            ],
+            "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+            "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/td-headers-attr?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "th-has-data-cells",
+            "impact": null,
+            "tags": [
+                "cat.tables",
+                "wcag2a",
+                "wcag131",
+                "section508",
+                "section508.22.g"
+            ],
+            "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+            "help": "Table headers in a data table must refer to data cells",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/th-has-data-cells?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "valid-lang",
+            "impact": null,
+            "tags": [
+                "cat.language",
+                "wcag2aa",
+                "wcag312"
+            ],
+            "description": "Ensures lang attributes have valid values",
+            "help": "lang attribute must have a valid value",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/valid-lang?application=axe-puppeteer",
+            "nodes": []
+        },
+        {
+            "id": "video-caption",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag122",
+                "section508",
+                "section508.22.a"
+            ],
+            "description": "Ensures <video> elements have captions",
+            "help": "<video> elements must have captions",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/video-caption?application=axe-puppeteer",
+            "nodes": []
+        }
+    ],
+    "passes": [
+        {
+            "id": "aria-allowed-attr",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures ARIA attributes are allowed for an element's role",
+            "help": "Elements must only use allowed ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-allowed-attr?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "aria-allowed-attr",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA attributes are used correctly for the defined role"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "aria-unsupported-attr",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA attribute is supported"
+                        },
+                        {
+                            "id": "aria-prohibited-attr",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "ARIA attribute is allowed"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-hidden-body",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures aria-hidden='true' is not present on the document body.",
+            "help": "aria-hidden='true' must not be present on the document body",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-hidden-body?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "aria-hidden-body",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "No aria-hidden attribute is present on document body"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<body id=\"afd\" style=\"visibility: visible;\">",
+                    "target": [
+                        "#afd"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-hidden-focus",
+            "impact": null,
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag131"
+            ],
+            "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-hidden-focus?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "focusable-modal-open",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements while a modal is open"
+                        },
+                        {
+                            "id": "focusable-disabled",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        },
+                        {
+                            "id": "focusable-not-tabbable",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Business%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDiCIoZ6oblFGjR9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-koqpkF_EjQ0ZRQbNo0&amp;pcsa=false&amp;nb=18&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"18\" target=\"_top\" aria-hidden=\"true\" tabindex=\"-1\" class=\"q_ si102 \">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si69.i_ > .i_ > .si102[data-nb=\"18\"][aria-hidden=\"true\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "focusable-modal-open",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements while a modal is open"
+                        },
+                        {
+                            "id": "focusable-disabled",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        },
+                        {
+                            "id": "focusable-not-tabbable",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Invoice%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCkQb5wq47dOl3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-klkb9t4AOusxsRLYBtAw&amp;pcsa=false&amp;nb=18&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"18\" target=\"_top\" aria-hidden=\"true\" tabindex=\"-1\" class=\"q_ si102 \">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si69.i_ > .i_ > .si102[data-nb=\"18\"][aria-hidden=\"true\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "focusable-modal-open",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements while a modal is open"
+                        },
+                        {
+                            "id": "focusable-disabled",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        },
+                        {
+                            "id": "focusable-not-tabbable",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Personal%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDVctkn1b3COB_R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k4tYVGqF_vnJFQbto0&amp;pcsa=false&amp;nb=18&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"18\" target=\"_top\" aria-hidden=\"true\" tabindex=\"-1\" class=\"q_ si102 \">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si69.i_ > .i_ > .si102[data-nb=\"18\"][aria-hidden=\"true\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "focusable-modal-open",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements while a modal is open"
+                        },
+                        {
+                            "id": "focusable-disabled",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        },
+                        {
+                            "id": "focusable-not-tabbable",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Tax%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCNfp47lM23EA7R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k5juE3vFGji24RLYZtAw&amp;pcsa=false&amp;nb=18&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"18\" target=\"_top\" aria-hidden=\"true\" tabindex=\"-1\" class=\"q_ si102 \">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si69.i_ > .i_ > .si102[data-nb=\"18\"][aria-hidden=\"true\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "focusable-modal-open",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements while a modal is open"
+                        },
+                        {
+                            "id": "focusable-disabled",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        },
+                        {
+                            "id": "focusable-not-tabbable",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No focusable elements contained within element"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=My%20Account%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWCGQsYnzPiXRQ3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-kEsO1TmCei4ORQaNo0&amp;pcsa=false&amp;nb=18&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"18\" target=\"_top\" aria-hidden=\"true\" tabindex=\"-1\" class=\"q_ si102 \">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si69.i_ > .i_ > .si102[data-nb=\"18\"][aria-hidden=\"true\"]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-required-attr",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+            "help": "Required ARIA attributes must be provided",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-required-attr?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "aria-required-attr",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-roles",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures all elements with a role attribute use a valid value",
+            "help": "ARIA roles used must conform to valid values",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-roles?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "fallbackrole",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Only one role value used"
+                        },
+                        {
+                            "id": "invalidrole",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA role is valid"
+                        },
+                        {
+                            "id": "abstractrole",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Abstract roles are not used"
+                        },
+                        {
+                            "id": "unsupportedrole",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA role is supported"
+                        },
+                        {
+                            "id": "deprecatedrole",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "ARIA role is not deprecated"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-valid-attr-value",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures all ARIA attributes have valid values",
+            "help": "ARIA attributes must conform to valid values",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-valid-attr-value?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "aria-valid-attr-value",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA attribute values are valid"
+                        },
+                        {
+                            "id": "aria-errormessage",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+                        },
+                        {
+                            "id": "aria-level",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-level values are valid"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aria-valid-attr",
+            "impact": null,
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+            "help": "ARIA attributes must conform to valid names",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-valid-attr?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "aria-valid-attr",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "ARIA attribute name is valid"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "avoid-inline-spacing",
+            "impact": null,
+            "tags": [
+                "cat.structure",
+                "wcag21aa",
+                "wcag1412"
+            ],
+            "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+            "help": "Inline text spacing must be adjustable with custom stylesheets",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/avoid-inline-spacing?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<body id=\"afd\" style=\"visibility: visible;\">",
+                    "target": [
+                        "#afd"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"tc\" id=\"tc\" style=\"height: auto;\">",
+                    "target": [
+                        "#tc"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<iframe frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowtransparency=\"true\" scrolling=\"no\" name=\"{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://trkpc.net/track.php?click=caf&amp;domain=insuit.com&amp;rxid=&amp;uid=MTY1NTA2Njk2OS41NzI1OmQ2ZWJjZWRmZWEzZWYzODIyYWE0NTlhZjEzNDY3ZGQwYzYwMzM1YzA4ZTZkMDBjZTgwZjVjN2E1MTNmNjkyNzY6NjJhNjUxNTk4YmMyMw%3D%3D&amp;ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;adtest=off&quot;,&quot;container&quot;:&quot;tc&quot;,&quot;styleId&quot;:7012053855,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;000001,bucket023&quot;,&quot;domainName&quot;:&quot;www1.insuit.com&quot;,&quot;fexp&quot;:&quot;21404,17300003,17300953,17300956&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:5,&quot;pubId&quot;:&quot;dp-teaminternet12_3ph&quot;,&quot;role&quot;:&quot;m&quot;,&quot;hl&quot;:&quot;it&quot;,&quot;colorAttribution&quot;:&quot;#b7b7b7&quot;,&quot;fontFamily&quot;:&quot;arial&quot;,&quot;fontFamilyAttribution&quot;:&quot;arial&quot;,&quot;rolloverLinkBold&quot;:false,&quot;resultsPageBaseUrl&quot;:&quot;http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;center&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Business Accounting Software,Invoice Management Software,Personal Accounting Software,Tax Management Software,My Account Management Software&quot;,&quot;kw&quot;:&quot;&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:40,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;relatedsearch&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:10,&quot;fontSizeTitle&quot;:&quot;24px&quot;,&quot;fontSizeAttribution&quot;:&quot;14px&quot;,&quot;colorBackground&quot;:&quot;transparent&quot;,&quot;attributionBold&quot;:false,&quot;webFontFamily&quot;:&quot;Poppins&quot;,&quot;uiOptimize&quot;:true,&quot;domainRegistrant&quot;:&quot;as-drid-2603414215433570&quot;}}\" id=\"master-1\" src=\"https://www.google.com/afs/ads?adtest=off&amp;psid=7012053855&amp;pcsa=false&amp;channel=000001%2Cbucket023&amp;client=dp-teaminternet12_3ph&amp;r=m&amp;hl=it&amp;terms=Business%20Accounting%20Software%2CInvoice%20Management%20Software%2CPersonal%20Accounting%20Software%2CTax%20Management%20Software%2CMy%20Account%20Management%20Software&amp;max_radlink_len=40&amp;type=3&amp;uiopt=true&amp;swp=as-drid-2603414215433570&amp;oe=UTF-8&amp;ie=UTF-8&amp;fexp=21404%2C17300003%2C17300953%2C17300956&amp;format=r5&amp;nocache=1271655066969862&amp;num=0&amp;output=afd_ads&amp;domain_name=www1.insuit.com&amp;v=3&amp;bsl=8&amp;pac=0&amp;u_his=2&amp;u_tz=120&amp;dt=1655066969862&amp;u_w=360&amp;u_h=640&amp;biw=360&amp;bih=640&amp;psw=360&amp;psh=953&amp;frm=0&amp;uio=-&amp;cont=tc&amp;jsid=caf&amp;jsv=50759&amp;rurl=http%3A%2F%2Fwww1.insuit.com%2F%3Ftm%3D1%26subid4%3D1655066969.0310790000%26kw%3DAccounting%2BSoftware%26KW1%3DBusiness%2520Accounting%2520Software%26KW2%3DInvoice%2520Management%2520Software%26KW3%3DPersonal%2520Accounting%2520Software%26KW4%3DTax%2520Management%2520Software%26KW5%3DMy%2520Account%2520Management%2520Software%26searchbox%3D0%26domainname%3D0%26backfill%3D0&amp;referer=http%3A%2F%2Finsuit.com%2F#master-1\" style=\"visibility: visible; height: 870px; display: block; width: 1px; min-width: 100%;\" title=\"\">",
+                    "target": [
+                        "#master-1"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ rssAttrContainer \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        ".rssAttrContainer"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e1\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e1"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Business%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDiCIoZ6oblFGjR9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-koqpkF_EjQ0ZRQbNo0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si69 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:center; -webkit-box-pack:center; -webkit-justify-content:center; justify-content:center;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si69.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_  \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si69.i_ > .i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si33 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si33.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e2\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e2"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Invoice%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCkQb5wq47dOl3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-klkb9t4AOusxsRLYBtAw&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si69 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:center; -webkit-box-pack:center; -webkit-justify-content:center; justify-content:center;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si69.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_  \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si69.i_ > .i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si33 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si33.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e3\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e3"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Personal%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDVctkn1b3COB_R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k4tYVGqF_vnJFQbto0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si69 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:center; -webkit-box-pack:center; -webkit-justify-content:center; justify-content:center;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si69.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_  \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si69.i_ > .i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si33 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si33.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e4\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e4"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Tax%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCNfp47lM23EA7R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k5juE3vFGji24RLYZtAw&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si69 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:center; -webkit-box-pack:center; -webkit-justify-content:center; justify-content:center;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si69.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_  \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si69.i_ > .i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si33 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si33.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e5\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e5"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=My%20Account%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWCGQsYnzPiXRQ3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-kEsO1TmCei4ORQaNo0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si69 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:center; -webkit-box-pack:center; -webkit-justify-content:center; justify-content:center;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si69.i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_  \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si69.i_ > .i_"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "avoid-inline-spacing",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "No inline styles with '!important' that affect text spacing has been specified"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"i_ si33 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si33.i_"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bypass",
+            "impact": null,
+            "tags": [
+                "cat.keyboard",
+                "wcag2a",
+                "wcag241",
+                "section508",
+                "section508.22.o"
+            ],
+            "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+            "help": "Page must have means to bypass repeated blocks",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/bypass?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "landmark",
+                            "data": null,
+                            "relatedNodes": [
+                                {
+                                    "html": "<main>",
+                                    "target": [
+                                        "main"
+                                    ]
+                                }
+                            ],
+                            "impact": "serious",
+                            "message": "Page has a landmark region"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<html data-adblockkey=\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALquDFETXRn0Hr05fUP7EJT77xYnPmRbpMy4vk8KYiHnkNpednjOANJcaXDXcKQJN0nXKZJL7TciJD8AoHXK158CAwEAAQ==_TAE4AfJYBHqG/eChEHX5NOT+OxeRnuesOk4JWclhtuJoJvqmpyNxjJukVj7fmOtqmqCtIQX2bnCkspDgW9CnZg==\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">",
+                    "target": [
+                        "html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "color-contrast",
+            "impact": "serious",
+            "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+            ],
+            "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+            "help": "Elements must have sufficient color contrast",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#333333",
+                                "bgColor": "#edf7fe",
+                                "contrastRatio": 11.63,
+                                "fontSize": "7.5pt (10px)",
+                                "fontWeight": "normal",
+                                "expectedContrastRatio": "4.5:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.63"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a class=\"p_ si133 \" href=\"https://www.google.com/adsense/support/bin/request.py?contact=abg_afc&amp;url=https://www.google.com/afs/ads?adtest%3Doff%26psid%3D7012053855%26channel%3D000001,bucket023%26client%3Ddp-teaminternet12_3ph%26r%3Dm%26hl%3Dit%26terms%3DBusiness%2BAccounting%2BSoftware,Invoice%2BManagement%2BSoftware,Personal%2BAccounting%2BSoftware,Tax%2BManagement%2BSoftware,My%2BAccount%2BManagement%2BSoftware%26max_radlink_len%3D40%26type%3D3%26uiopt%3Dtrue%26swp%3Das-drid-2603414215433570%26oe%3DUTF-8%26ie%3DUTF-8%26fexp%3D21404,17300003,17300953,17300956%26format%3Dr5%26num%3D0%26output%3Dafd_ads%26domain_name%3Dwww1.insuit.com%26v%3D3%26bsl%3D8%26u_his%3D2%26biw%3D360%26bih%3D640%26frm%3D0%26uio%3D-%26cont%3Dtc%26jsid%3Dcaf%26rurl%3Dhttp://www1.insuit.com/%253Ftm%253D1%2526subid4%253D1655066969.0310790000%2526kw%253DAccounting%252BSoftware%2526KW1%253DBusiness%252520Accounting%252520Software%2526KW2%253DInvoice%252520Management%252520Software%2526KW3%253DPersonal%252520Accounting%252520Software%2526KW4%253DTax%252520Management%252520Software%2526KW5%253DMy%252520Account%252520Management%252520Software%2526searchbox%253D0%2526domainname%253D0%2526backfill%253D0%26referer%3Dhttp://insuit.com/%26adsafe%3Dlow%26pcsa%3Dfalse&amp;hl=it&amp;client=dp-teaminternet12_3ph&amp;gl=IT\" target=\"_top\">",
+                    "target": [
+                        "#master-1",
+                        ".si133"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#ffffff",
+                                "bgColor": "#1b3774",
+                                "contrastRatio": 11.38,
+                                "fontSize": "18.0pt (24px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "3:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.38"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<span class=\"p_ si34 \">Business Accounting Software</span>",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si33.i_ > span"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#ffffff",
+                                "bgColor": "#1b3774",
+                                "contrastRatio": 11.38,
+                                "fontSize": "18.0pt (24px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "3:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.38"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<span class=\"p_ si34 \">Invoice Management Software</span>",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si33.i_ > span"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#ffffff",
+                                "bgColor": "#1b3774",
+                                "contrastRatio": 11.38,
+                                "fontSize": "18.0pt (24px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "3:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.38"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<span class=\"p_ si34 \">Personal Accounting Software</span>",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si33.i_ > span"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#ffffff",
+                                "bgColor": "#1b3774",
+                                "contrastRatio": 11.38,
+                                "fontSize": "18.0pt (24px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "3:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.38"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<span class=\"p_ si34 \">Tax Management Software</span>",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si33.i_ > span"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#ffffff",
+                                "bgColor": "#1b3774",
+                                "contrastRatio": 11.38,
+                                "fontSize": "18.0pt (24px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "3:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 11.38"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<span class=\"p_ si34 \">My Account Management Software</span>",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si33.i_ > span"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#9a9dad",
+                                "bgColor": "#101c36",
+                                "contrastRatio": 6.28,
+                                "fontSize": "10.5pt (14px)",
+                                "fontWeight": "bold",
+                                "expectedContrastRatio": "4.5:1"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 6.28"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<a href=\"http://uniregistry.com/market/domain/insuit.com\" target=\"_blank\" onmousedown=\"tlink('ing', 'insuit.com');\">\n    \t\tClick here to buy insuit.com for your website name!\n\t</a>",
+                    "target": [
+                        "a[target=\"_blank\"]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "document-title",
+            "impact": null,
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+            ],
+            "description": "Ensures each HTML document contains a non-empty <title> element",
+            "help": "Documents must have <title> element to aid in navigation",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "doc-has-title",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Document has a non-empty <title> element"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<html data-adblockkey=\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALquDFETXRn0Hr05fUP7EJT77xYnPmRbpMy4vk8KYiHnkNpednjOANJcaXDXcKQJN0nXKZJL7TciJD8AoHXK158CAwEAAQ==_TAE4AfJYBHqG/eChEHX5NOT+OxeRnuesOk4JWclhtuJoJvqmpyNxjJukVj7fmOtqmqCtIQX2bnCkspDgW9CnZg==\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">",
+                    "target": [
+                        "html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "duplicate-id",
+            "impact": null,
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ],
+            "description": "Ensures every id attribute value is unique",
+            "help": "id attribute value must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "afd",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<body id=\"afd\" style=\"visibility: visible;\">",
+                    "target": [
+                        "#afd"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "tc",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div class=\"tc\" id=\"tc\" style=\"height: auto;\">",
+                    "target": [
+                        "#tc"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "master-1",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<iframe frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowtransparency=\"true\" scrolling=\"no\" name=\"{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://trkpc.net/track.php?click=caf&amp;domain=insuit.com&amp;rxid=&amp;uid=MTY1NTA2Njk2OS41NzI1OmQ2ZWJjZWRmZWEzZWYzODIyYWE0NTlhZjEzNDY3ZGQwYzYwMzM1YzA4ZTZkMDBjZTgwZjVjN2E1MTNmNjkyNzY6NjJhNjUxNTk4YmMyMw%3D%3D&amp;ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;adtest=off&quot;,&quot;container&quot;:&quot;tc&quot;,&quot;styleId&quot;:7012053855,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;000001,bucket023&quot;,&quot;domainName&quot;:&quot;www1.insuit.com&quot;,&quot;fexp&quot;:&quot;21404,17300003,17300953,17300956&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:5,&quot;pubId&quot;:&quot;dp-teaminternet12_3ph&quot;,&quot;role&quot;:&quot;m&quot;,&quot;hl&quot;:&quot;it&quot;,&quot;colorAttribution&quot;:&quot;#b7b7b7&quot;,&quot;fontFamily&quot;:&quot;arial&quot;,&quot;fontFamilyAttribution&quot;:&quot;arial&quot;,&quot;rolloverLinkBold&quot;:false,&quot;resultsPageBaseUrl&quot;:&quot;http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;center&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Business Accounting Software,Invoice Management Software,Personal Accounting Software,Tax Management Software,My Account Management Software&quot;,&quot;kw&quot;:&quot;&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:40,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;relatedsearch&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:10,&quot;fontSizeTitle&quot;:&quot;24px&quot;,&quot;fontSizeAttribution&quot;:&quot;14px&quot;,&quot;colorBackground&quot;:&quot;transparent&quot;,&quot;attributionBold&quot;:false,&quot;webFontFamily&quot;:&quot;Poppins&quot;,&quot;uiOptimize&quot;:true,&quot;domainRegistrant&quot;:&quot;as-drid-2603414215433570&quot;}}\" id=\"master-1\" src=\"https://www.google.com/afs/ads?adtest=off&amp;psid=7012053855&amp;pcsa=false&amp;channel=000001%2Cbucket023&amp;client=dp-teaminternet12_3ph&amp;r=m&amp;hl=it&amp;terms=Business%20Accounting%20Software%2CInvoice%20Management%20Software%2CPersonal%20Accounting%20Software%2CTax%20Management%20Software%2CMy%20Account%20Management%20Software&amp;max_radlink_len=40&amp;type=3&amp;uiopt=true&amp;swp=as-drid-2603414215433570&amp;oe=UTF-8&amp;ie=UTF-8&amp;fexp=21404%2C17300003%2C17300953%2C17300956&amp;format=r5&amp;nocache=1271655066969862&amp;num=0&amp;output=afd_ads&amp;domain_name=www1.insuit.com&amp;v=3&amp;bsl=8&amp;pac=0&amp;u_his=2&amp;u_tz=120&amp;dt=1655066969862&amp;u_w=360&amp;u_h=640&amp;biw=360&amp;bih=640&amp;psw=360&amp;psh=953&amp;frm=0&amp;uio=-&amp;cont=tc&amp;jsid=caf&amp;jsv=50759&amp;rurl=http%3A%2F%2Fwww1.insuit.com%2F%3Ftm%3D1%26subid4%3D1655066969.0310790000%26kw%3DAccounting%2BSoftware%26KW1%3DBusiness%2520Accounting%2520Software%26KW2%3DInvoice%2520Management%2520Software%26KW3%3DPersonal%2520Accounting%2520Software%26KW4%3DTax%2520Management%2520Software%26KW5%3DMy%2520Account%2520Management%2520Software%26searchbox%3D0%26domainname%3D0%26backfill%3D0&amp;referer=http%3A%2F%2Finsuit.com%2F#master-1\" style=\"visibility: visible; height: 870px; display: block; width: 1px; min-width: 100%;\" title=\"\">",
+                    "target": [
+                        "#master-1"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "adBlock",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"adBlock\" class=\"i_ si135 \" style=\"-webkit-box-orient: horizontal; flex-flow: row wrap; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: start; align-items: flex-start; transform: rotateZ(0deg);\" aria-label=\"\" role=\"region\">",
+                    "target": [
+                        "#master-1",
+                        "#adBlock"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "e1",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e1\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e1"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "e2",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e2\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e2"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "e3",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e3\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e3"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "e4",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e4\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e4"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "e5",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"e5\" class=\"i_ si101 b_\" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;\" data-bg=\"true\">",
+                    "target": [
+                        "#master-1",
+                        "#e5"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "duplicate-id",
+                            "data": "sale_link_bold",
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<div id=\"sale_link_bold\" class=\"sale_link_bold\">\n\t\t\t<a href=\"http://uniregistry.com/market/domain/insuit.com\" target=\"_blank\" onmousedown=\"tlink('ing', 'insuit.com');\">\n    \t\tClick here to buy insuit.com for your website name!\n\t</a>\n</div>",
+                    "target": [
+                        "#sale_link_bold"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "html-has-lang",
+            "impact": null,
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+            ],
+            "description": "Ensures every HTML document has a lang attribute",
+            "help": "<html> element must have a lang attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "has-lang",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "The <html> element has a lang attribute"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<html data-adblockkey=\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALquDFETXRn0Hr05fUP7EJT77xYnPmRbpMy4vk8KYiHnkNpednjOANJcaXDXcKQJN0nXKZJL7TciJD8AoHXK158CAwEAAQ==_TAE4AfJYBHqG/eChEHX5NOT+OxeRnuesOk4JWclhtuJoJvqmpyNxjJukVj7fmOtqmqCtIQX2bnCkspDgW9CnZg==\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">",
+                    "target": [
+                        "html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "html-lang-valid",
+            "impact": null,
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+            ],
+            "description": "Ensures the lang attribute of the <html> element has a valid value",
+            "help": "<html> element must have a valid value for the lang attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-lang-valid?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "valid-lang",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Value of lang attribute is included in the list of valid languages"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<html data-adblockkey=\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALquDFETXRn0Hr05fUP7EJT77xYnPmRbpMy4vk8KYiHnkNpednjOANJcaXDXcKQJN0nXKZJL7TciJD8AoHXK158CAwEAAQ==_TAE4AfJYBHqG/eChEHX5NOT+OxeRnuesOk4JWclhtuJoJvqmpyNxjJukVj7fmOtqmqCtIQX2bnCkspDgW9CnZg==\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">",
+                    "target": [
+                        "html"
+                    ]
+                },
+                {
+                    "any": [],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "valid-lang",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Value of lang attribute is included in the list of valid languages"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<html lang=\"it\">",
+                    "target": [
+                        "#master-1",
+                        "html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "html-xml-lang-mismatch",
+            "impact": null,
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+            ],
+            "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+            "help": "HTML elements with lang and xml:lang must have the same base language",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-xml-lang-mismatch?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [],
+                    "all": [
+                        {
+                            "id": "xml-lang-mismatch",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "message": "Lang and xml:lang attributes have the same base language"
+                        }
+                    ],
+                    "none": [],
+                    "impact": null,
+                    "html": "<html data-adblockkey=\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALquDFETXRn0Hr05fUP7EJT77xYnPmRbpMy4vk8KYiHnkNpednjOANJcaXDXcKQJN0nXKZJL7TciJD8AoHXK158CAwEAAQ==_TAE4AfJYBHqG/eChEHX5NOT+OxeRnuesOk4JWclhtuJoJvqmpyNxjJukVj7fmOtqmqCtIQX2bnCkspDgW9CnZg==\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">",
+                    "target": [
+                        "html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "link-name",
+            "impact": null,
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag244",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures links have discernible text",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a class=\"p_ si133 \" href=\"https://www.google.com/adsense/support/bin/request.py?contact=abg_afc&amp;url=https://www.google.com/afs/ads?adtest%3Doff%26psid%3D7012053855%26channel%3D000001,bucket023%26client%3Ddp-teaminternet12_3ph%26r%3Dm%26hl%3Dit%26terms%3DBusiness%2BAccounting%2BSoftware,Invoice%2BManagement%2BSoftware,Personal%2BAccounting%2BSoftware,Tax%2BManagement%2BSoftware,My%2BAccount%2BManagement%2BSoftware%26max_radlink_len%3D40%26type%3D3%26uiopt%3Dtrue%26swp%3Das-drid-2603414215433570%26oe%3DUTF-8%26ie%3DUTF-8%26fexp%3D21404,17300003,17300953,17300956%26format%3Dr5%26num%3D0%26output%3Dafd_ads%26domain_name%3Dwww1.insuit.com%26v%3D3%26bsl%3D8%26u_his%3D2%26biw%3D360%26bih%3D640%26frm%3D0%26uio%3D-%26cont%3Dtc%26jsid%3Dcaf%26rurl%3Dhttp://www1.insuit.com/%253Ftm%253D1%2526subid4%253D1655066969.0310790000%2526kw%253DAccounting%252BSoftware%2526KW1%253DBusiness%252520Accounting%252520Software%2526KW2%253DInvoice%252520Management%252520Software%2526KW3%253DPersonal%252520Accounting%252520Software%2526KW4%253DTax%252520Management%252520Software%2526KW5%253DMy%252520Account%252520Management%252520Software%2526searchbox%253D0%2526domainname%253D0%2526backfill%253D0%26referer%3Dhttp://insuit.com/%26adsafe%3Dlow%26pcsa%3Dfalse&amp;hl=it&amp;client=dp-teaminternet12_3ph&amp;gl=IT\" target=\"_top\">",
+                    "target": [
+                        "#master-1",
+                        ".si133"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Business%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDiCIoZ6oblFGjR9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-koqpkF_EjQ0ZRQbNo0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Invoice%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCkQb5wq47dOl3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-klkb9t4AOusxsRLYBtAw&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Personal%20Accounting%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWDVctkn1b3COB_R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k4tYVGqF_vnJFQbto0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=Tax%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElPcHWCNfp47lM23EA7R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-k5juE3vFGji24RLYZtAw&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;query=My%20Account%20Management%20Software&amp;afdToken=ChMItMPJ9uSo-AIVH4L9Bx0f7AtVElLcHWCGQsYnzPiXRQ3R9de-FvnYh0CckwOscjDPa0_woTmz8fdMiTlFpKXsO3svQx4BZu8ZxAkkqM_otWGd8VER97P2S-kEsO1TmCei4ORQaNo0&amp;pcsa=false&amp;nb=0&amp;rurl=http%3A%2F%2Finsuit.com%2F\" data-nb=\"0\" target=\"_top\" class=\"i_ si144 \" style=\"-ms-flex-direction:row; -webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;-ms-flex-pack:start; -webkit-box-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;-ms-flex-align:center; -webkit-box-align:center; -webkit-align-items:center; align-items:center;\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"http://uniregistry.com/market/domain/insuit.com\" target=\"_blank\" onmousedown=\"tlink('ing', 'insuit.com');\">\n    \t\tClick here to buy insuit.com for your website name!\n\t</a>",
+                    "target": [
+                        "a[target=\"_blank\"]"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-visible-text",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers"
+                        }
+                    ],
+                    "all": [],
+                    "none": [
+                        {
+                            "id": "focusable-no-name",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text"
+                        }
+                    ],
+                    "impact": null,
+                    "html": "<a href=\"javascript:void(0);\" onclick=\"showPolicy();\">Privacy Policy</a>",
+                    "target": [
+                        "a[href=\"javascript:void(0);\"]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nested-interactive",
+            "impact": null,
+            "tags": [
+                "cat.keyboard",
+                "wcag2a",
+                "wcag412"
+            ],
+            "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+            "help": "Interactive controls must not be nested",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/nested-interactive?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "no-focusable-content",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "no-focusable-content",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "no-focusable-content",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "no-focusable-content",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "id": "no-focusable-content",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": null,
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ]
+                }
+            ]
+        }
+    ],
+    "incomplete": [],
+    "violations": [
+        {
+            "id": "color-contrast",
+            "impact": "serious",
+            "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+            ],
+            "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+            "help": "Elements must have sufficient color contrast",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#626574",
+                                "bgColor": "#101c36",
+                                "contrastRatio": 2.92,
+                                "fontSize": "10.8pt (14.4px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "expectedContrastRatio": "4.5:1"
+                            },
+                            "relatedNodes": [
+                                {
+                                    "html": "<body id=\"afd\" style=\"visibility: visible;\">",
+                                    "target": [
+                                        "#afd"
+                                    ]
+                                }
+                            ],
+                            "impact": "serious",
+                            "message": "Element has insufficient color contrast of 2.92 (foreground color: #626574, background color: #101c36, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "serious",
+                    "html": "<footer class=\"footer\">",
+                    "target": [
+                        "footer"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #626574, background color: #101c36, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                    "any": [
+                        {
+                            "id": "color-contrast",
+                            "data": {
+                                "fgColor": "#626574",
+                                "bgColor": "#101c36",
+                                "contrastRatio": 2.92,
+                                "fontSize": "10.8pt (14.4px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "expectedContrastRatio": "4.5:1"
+                            },
+                            "relatedNodes": [
+                                {
+                                    "html": "<body id=\"afd\" style=\"visibility: visible;\">",
+                                    "target": [
+                                        "#afd"
+                                    ]
+                                }
+                            ],
+                            "impact": "serious",
+                            "message": "Element has insufficient color contrast of 2.92 (foreground color: #626574, background color: #101c36, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "serious",
+                    "html": "<a href=\"javascript:void(0);\" onclick=\"showPolicy();\">Privacy Policy</a>",
+                    "target": [
+                        "a[href=\"javascript:void(0);\"]"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #626574, background color: #101c36, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+            ]
+        },
+        {
+            "id": "frame-title",
+            "impact": "serious",
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag241",
+                "wcag412",
+                "section508",
+                "section508.22.i"
+            ],
+            "description": "Ensures <iframe> and <frame> elements have an accessible name",
+            "help": "Frames must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/frame-title?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "emptyAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has an empty title attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "serious",
+                    "html": "<iframe frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowtransparency=\"true\" scrolling=\"no\" name=\"{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://trkpc.net/track.php?click=caf&amp;domain=insuit.com&amp;rxid=&amp;uid=MTY1NTA2Njk2OS41NzI1OmQ2ZWJjZWRmZWEzZWYzODIyYWE0NTlhZjEzNDY3ZGQwYzYwMzM1YzA4ZTZkMDBjZTgwZjVjN2E1MTNmNjkyNzY6NjJhNjUxNTk4YmMyMw%3D%3D&amp;ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&amp;adtest=off&quot;,&quot;container&quot;:&quot;tc&quot;,&quot;styleId&quot;:7012053855,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;000001,bucket023&quot;,&quot;domainName&quot;:&quot;www1.insuit.com&quot;,&quot;fexp&quot;:&quot;21404,17300003,17300953,17300956&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:5,&quot;pubId&quot;:&quot;dp-teaminternet12_3ph&quot;,&quot;role&quot;:&quot;m&quot;,&quot;hl&quot;:&quot;it&quot;,&quot;colorAttribution&quot;:&quot;#b7b7b7&quot;,&quot;fontFamily&quot;:&quot;arial&quot;,&quot;fontFamilyAttribution&quot;:&quot;arial&quot;,&quot;rolloverLinkBold&quot;:false,&quot;resultsPageBaseUrl&quot;:&quot;http://www1.insuit.com/?ts=fFBlcmxiYWNofHw5ODkxYXxidWNrZXQwMjN8fHx8fHw2MmE2NTE1OThiYzA0fHx8MTY1NTA2Njk2OS41Nzl8NWNkOGJiMTA0MjJmOGZmNzAzMzQ0YTJiMmJjYjliMjBkNzFmMDM1ZXx8fHx8MXx8MHwwfHx8fDF8fHx8fDB8MHx8fHx8fHx8fHwwfDB8fDB8fHwwfDB8ZXlKemRIbHNaVWxrSWpvaUlEY3dNVEl3TlRNNE5UVWlmUT09fHwwfGV5SnpkV0pwWkRRaU9pSXhOalUxTURZMk9UWTVMakF6TVRBM09UQXdNREFpZlE9PXwzYThiOWUxY2ZmNTJkZTQ2ZDBjYmUxZWI1N2IxMTQ4YTk2MzI5MjVjfDB8ZHAtdGVhbWludGVybmV0MTJfM3BofDA%3D&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;center&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Business Accounting Software,Invoice Management Software,Personal Accounting Software,Tax Management Software,My Account Management Software&quot;,&quot;kw&quot;:&quot;&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:40,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;relatedsearch&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:10,&quot;fontSizeTitle&quot;:&quot;24px&quot;,&quot;fontSizeAttribution&quot;:&quot;14px&quot;,&quot;colorBackground&quot;:&quot;transparent&quot;,&quot;attributionBold&quot;:false,&quot;webFontFamily&quot;:&quot;Poppins&quot;,&quot;uiOptimize&quot;:true,&quot;domainRegistrant&quot;:&quot;as-drid-2603414215433570&quot;}}\" id=\"master-1\" src=\"https://www.google.com/afs/ads?adtest=off&amp;psid=7012053855&amp;pcsa=false&amp;channel=000001%2Cbucket023&amp;client=dp-teaminternet12_3ph&amp;r=m&amp;hl=it&amp;terms=Business%20Accounting%20Software%2CInvoice%20Management%20Software%2CPersonal%20Accounting%20Software%2CTax%20Management%20Software%2CMy%20Account%20Management%20Software&amp;max_radlink_len=40&amp;type=3&amp;uiopt=true&amp;swp=as-drid-2603414215433570&amp;oe=UTF-8&amp;ie=UTF-8&amp;fexp=21404%2C17300003%2C17300953%2C17300956&amp;format=r5&amp;nocache=1271655066969862&amp;num=0&amp;output=afd_ads&amp;domain_name=www1.insuit.com&amp;v=3&amp;bsl=8&amp;pac=0&amp;u_his=2&amp;u_tz=120&amp;dt=1655066969862&amp;u_w=360&amp;u_h=640&amp;biw=360&amp;bih=640&amp;psw=360&amp;psh=953&amp;frm=0&amp;uio=-&amp;cont=tc&amp;jsid=caf&amp;jsv=50759&amp;rurl=http%3A%2F%2Fwww1.insuit.com%2F%3Ftm%3D1%26subid4%3D1655066969.0310790000%26kw%3DAccounting%2BSoftware%26KW1%3DBusiness%2520Accounting%2520Software%26KW2%3DInvoice%2520Management%2520Software%26KW3%3DPersonal%2520Accounting%2520Software%26KW4%3DTax%2520Management%2520Software%26KW5%3DMy%2520Account%2520Management%2520Software%26searchbox%3D0%26domainname%3D0%26backfill%3D0&amp;referer=http%3A%2F%2Finsuit.com%2F#master-1\" style=\"visibility: visible; height: 870px; display: block; width: 1px; min-width: 100%;\" title=\"\">",
+                    "target": [
+                        "#master-1"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element has an empty title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+            ]
+        },
+        {
+            "id": "image-alt",
+            "impact": "critical",
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a",
+                "ACT"
+            ],
+            "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+            "help": "Images must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-alt?application=axe-puppeteer",
+            "nodes": [
+                {
+                    "any": [
+                        {
+                            "id": "has-alt",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "noAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "critical",
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e1 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-alt",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "noAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "critical",
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e2 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-alt",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "noAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "critical",
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e3 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-alt",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "noAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "critical",
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e4 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                    "any": [
+                        {
+                            "id": "has-alt",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "id": "aria-label",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "id": "aria-labelledby",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "id": "non-empty-title",
+                            "data": {
+                                "messageKey": "noAttr"
+                            },
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "id": "presentational-role",
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "minor",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "all": [],
+                    "none": [],
+                    "impact": "critical",
+                    "html": "<img src=\"https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/call_to_action_arrow.svg?c=%23ffffff\">",
+                    "target": [
+                        "#master-1",
+                        "#e5 > .si144[data-nb=\"0\"] > .si143.w_.q_ > img"
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+            ]
+        }
+    ]
+}

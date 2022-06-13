@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://localhost:4173",
+    "chromeWebSecurity": false,
+    "env": {
+      "baseUrl": "http://localhost:4173/"
+    },
+    "testFiles": "**/integration/*.*"
+  }
