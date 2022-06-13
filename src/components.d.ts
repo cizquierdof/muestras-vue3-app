@@ -19,7 +19,6 @@ declare module '@vue/runtime-core' {
     TableForm: typeof import('./components/TableForm.vue')['default']
     TableView: typeof import('./components/TableView.vue')['default']
     TableView2: typeof import('./components/TableView2.vue')['default']
-    VCheckbox: typeof import('vuetify/components')['VCheckbox']
   }
 }
 
