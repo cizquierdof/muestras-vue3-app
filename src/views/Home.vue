@@ -1,6 +1,6 @@
 <template>
    <main class="">
-    <!---------------ESTATUS DE LA MUESTRA-------------->
+    <!---------------STATUS DE LA MUESTRA-------------->
     <div class="row m-2">
       <div class="col bg-dark card">
         <SiteForm />

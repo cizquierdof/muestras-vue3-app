@@ -1,7 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
-import Lanzadera from '@/views/Lanzadera.vue';
 
 const routes = [
     {
@@ -9,12 +8,6 @@ const routes = [
         name: 'Home',
         component: Home,
         meta: { title: 'Home' }
-    },
-    {
-        path: '/lanzadera',
-        name: 'Lanzadera',
-        component: Lanzadera,
-        meta: { title: 'Lanzadera' }
     },
     {
         path: '/about',

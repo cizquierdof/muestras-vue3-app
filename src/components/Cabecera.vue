@@ -19,9 +19,6 @@
             <router-link to="/" class="nav-link" aria-current="page"
               >Inicio</router-link
             >
-            <router-link to="/lanzadera" class="nav-link"
-              >Lanzadera</router-link
-            >
             <router-link to="/about" class="nav-link">About</router-link>
             <a
               class="nav-link disabled"
