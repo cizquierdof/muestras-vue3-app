@@ -6,6 +6,12 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Cabecera: typeof import('./components/Cabecera.vue')['default']
+    InaplicablesComponent: typeof import('./components/InaplicablesComponent.vue')['default']
+    IssueTags: typeof import('./components/IssueTags.vue')['default']
+    LoadingComponent: typeof import('./components/LoadingComponent.vue')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
+    README: typeof import('./components/README.md')['default']
+    Reporte: typeof import('./components/reporte.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SiteForm: typeof import('./components/SiteForm.vue')['default']

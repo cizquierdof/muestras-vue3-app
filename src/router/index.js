@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
+import AuditForm from '@/views/AuditForm.vue';
 
 const routes = [
     {
@@ -14,6 +15,12 @@ const routes = [
         name: 'About',
         component: About,
         meta: { title: 'About' }
+    },
+    {
+        path: '/audit_form',
+        name: 'AuditForm',
+        component: AuditForm,
+        meta: { title: 'Formulario de auditoría' }
     },
 ];
 

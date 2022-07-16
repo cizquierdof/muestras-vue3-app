@@ -19,6 +19,7 @@
             <router-link to="/" class="nav-link" aria-current="page"
               >Inicio</router-link
             >
+            <router-link to="/audit_form" class="nav-link">Formulario de auditoría</router-link>
             <router-link to="/about" class="nav-link">About</router-link>
             <a
               class="nav-link disabled"
