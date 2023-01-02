@@ -331,7 +331,7 @@ export const useSiteStore = defineStore({
     },
     //Abrir la lista de url en nueva ventana
     openUrlList() {
-      if (!confirm("No funciona en Chrome, ¿Continuar?")) return;
+      if (!confirm("¡Atención! en Chrome el funcionamiento es incorrecto ¿Continuar?")) return;
 
       const newWindow = [];
       this.siteWebPages.forEach((e, i) => {
